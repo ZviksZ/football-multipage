@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'ALS Sector';
+    src: url('../fonts/als_sector_regular.woff2') format('woff2'), url('../fonts/als_sector_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ALS Sector';
+    src: url('../fonts/als_sector_bold.woff2') format('woff2'), url('../fonts/als_sector_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RPL';
+    src: url('../fonts/RPL-Regular.woff2') format('woff2'), url('../fonts/RPL-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: url('../fonts/TTFirsNeue-Medium.woff2') format('woff2'),
+    url('../fonts/TTFirsNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

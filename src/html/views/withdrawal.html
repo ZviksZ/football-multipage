@@ -1,0 +1,22 @@
+<% var data = { title: "Withdrawal | RPL" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section clubs-page" id="scroll-load-section" data-ajax="getWithdrawal">
+    <div class="section-title">
+        <span>Withdrawal</span>
+    </div>
+
+    <div class="section-search">
+        <label for="scroll-search">
+            <input type="text" id="scroll-search" name="scroll-search" placeholder="Search">
+        </label>
+    </div>
+
+    <div class="section-content-wrap">
+        <div class="section-block">
+
+        </div>
+    </div>
+
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

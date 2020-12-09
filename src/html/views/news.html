@@ -1,0 +1,22 @@
+<% var data = { title: "News | RPL" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section news-page" id="scroll-load-section" data-ajax="news">
+    <div class="section-title text-align-center">
+        <span>Latest news</span>
+    </div>
+
+    <div class="custom-tabs__container">
+        <div class="section-tabs tabs-double custom-tabs">
+            <div class="item " data-tab="rpl">RPL news</div>
+            <div class="item" data-tab="clubs">CLUBS NEWS</div>
+        </div>
+
+        <div class="section-content-wrap">
+            <div class="custom-tabs__item" data-tab="rpl"></div>
+            <div class="custom-tabs__item" data-tab="clubs"></div>
+        </div>
+    </div>
+
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

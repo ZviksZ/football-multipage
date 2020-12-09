@@ -1,0 +1,112 @@
+.tournament-table {
+    .t-t {
+        tbody {
+            tr {
+                td {
+                    padding: 6px 0;
+                    &.place {
+                        width: 38px;
+                        max-width: 38px;
+                        position: relative;
+                        text-align: right;
+                        color: $colorGray;
+                        .border {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 5px;
+                            background: transparent;
+                        }
+                    }
+
+                    &.progress {
+                        width: 18px;
+                        text-align: center;
+                        vertical-align: top;
+                        i {
+                            display: inline-block;
+                            width: 6px;
+                            height: 6px;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            -webkit-background-size: contain;
+                            background-size: contain;
+                            margin-top: 8px;
+                            &.stay {
+                                background-image: url(../img/stay.svg);
+                            }
+                            &.up {
+                                background-image: url(../img/up.svg);
+                            }
+                            &.down {
+                                background-image: url(../img/down.svg);
+                            }
+                        }
+                    }
+                    &.club {
+                        .wrap {
+                            display: flex;
+                            align-items: center;
+                        }
+                        .logo {
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 6px;
+                        }
+                    }
+                    &.games {
+                        width: 35px;
+                        color: $colorGray;
+                    }
+                    &.goals {
+                        width: 55px;
+                        color: $colorGray;
+                    }
+                    &.points {
+                        width: 45px;
+                        font-family: $fontSecondary;
+                        font-size: 18px;
+                        line-height: 19px;
+                        vertical-align: top;
+                        font-weight: 700;
+                    }
+                }
+                td {
+                    border-top: 1px solid $colorGrayLight;
+                }
+
+                &:nth-child(1), &:nth-child(2) {
+                    td.place {
+                        .border {
+                            background: $colorGreen;
+                        }
+                    }
+                }
+                &:nth-child(3), &:nth-child(4) {
+                    td.place {
+                        .border {
+                            background: $colorMain;
+                        }
+                    }
+                }
+                &:nth-child(13), &:nth-child(14) {
+                    td.place {
+                        .border {
+                            background: $colorPink;
+                        }
+                    }
+                }
+                &:nth-child(15), &:nth-child(16) {
+                    td.place {
+                        .border {
+                            background: $colorRed;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,171 @@
+.referee-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 17px;
+    min-height: 54px;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0.44px;
+    color: $colorText;
+    background: $colorWhite;
+}
+.referee-list-item + .referee-list-item {
+    border-top: 1px solid $colorGrayLight;
+}
+
+
+.referee-header {
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 10px;
+    .referee-header__photo {
+        padding-left: 8px;
+        min-width: 120px;
+        max-width: 250px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        &:before {
+            display: block;
+            content: '';
+            float: left;
+            padding-top: 134%;
+        }
+    }
+    .referee-header__info {
+        padding-left: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .section-title {
+            border-bottom: 0;
+            padding: 0;
+            min-height: auto;
+            margin-bottom: 5px;
+        }
+        .referee-header__stats {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 11px;
+            .item {
+                display: flex;
+                align-items: center;
+                .icon {
+                    width: 12px;
+                    margin-right: 7px;
+                    i {
+                        display: inline-block;
+                        font-size: 12px;
+                        padding-top: 3px;
+                    }
+                }
+                span {
+                    font-size: 12px;
+                    line-height: 13px;
+                    letter-spacing: 0.44px;
+                    text-transform: uppercase;
+                    color: $colorText;
+                }
+            }
+            .item + .item {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+.referee-section {
+    .referee-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-bottom: 1px solid $colorGrayMiddle;
+        th, td {
+            text-align: center;
+        }
+        thead {
+            tr {
+                height: 55px;
+                th {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 18px;
+                    padding: 0 7px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                border-top: 1px solid $colorGrayLight;
+                height: 44px;
+                td {
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 23px;
+                    padding: 0 7px;
+                    &:not(.stat-name) {
+                        max-width: 56px;
+                        min-width: 56px;
+                    }
+                    &.stat-name {
+                        text-align: left;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        th:first-child, td:first-child {
+            padding-left: 17px;
+        }
+        th:last-child, td:last-child {
+            padding-right: 17px;
+        }
+    }
+}
+.referee-text {
+    padding: 13px 17px;
+}
+.referee-match-item {
+    min-height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 17px;
+    .info {
+        .status {
+            font-size: 11px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.44px;
+            color: $colorText;
+        }
+        .match {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            line-height: 21px;
+            letter-spacing: 0.44px;
+            color: $colorText;
+            .score {
+                display: inline-block;
+                margin-right: 5px;
+                font-weight: 700;
+            }
+        }
+        .date {
+            font-size: 11px;
+            line-height: 15px;
+            letter-spacing: 0.44px;
+            color: $colorGray;
+        }
+    }
+    i {
+        color: $colorText;
+    }
+}

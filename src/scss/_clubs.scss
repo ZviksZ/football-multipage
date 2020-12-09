@@ -1,0 +1,309 @@
+.club-list-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 66px;
+    background: $colorWhite;
+    padding: 10px 10px 10px 17px;
+    .logo {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin-right: 17px;
+    }
+    .club-info {
+        width: 100%;
+        .name {
+            font-size: 17px;
+            line-height: 23px;
+            color: $colorText;
+            white-space: nowrap;
+        }
+        .city {
+            color: $colorGray;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 0.44px;
+            white-space: nowrap;
+        }
+    }
+    i {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: 5px;
+        font-size: 14px;
+        color: $colorText;
+    }
+}
+
+.club-list-item + .club-list-item {
+    border-top: 1px solid $colorGrayLight;
+}
+
+.club-header {
+    width: 100%;
+    .content {
+        width: 100%;
+    }
+    .club-header__top {
+        position: relative;
+        width: 100%;
+        height: 208px;
+        background: $colorWhite;
+        .bg {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+        }
+        .bg-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .club-info {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .club-logo {
+            display: block;
+            width: 126px;
+            height: 126px;
+        }
+        .club-name {
+            font-family: $fontSecondary;
+            font-size: 22px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 1px;
+            color: $colorText;
+            margin-bottom: 7px;
+        }
+        .club-stadium {
+            font-size: 12px;
+            line-height: 13px;
+            text-align: center;
+            letter-spacing: 0.44px;
+            text-transform: uppercase;
+            color: $colorText;
+            margin-bottom: 10px;
+        }
+    }
+    .club-socials {
+        width: 100%;
+        height: 47px;
+        background: $colorWhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            margin: 0 12px;
+            color: $colorGray;
+            font-size: 22px;
+            img {
+                display: none;
+            }
+        }
+
+    }
+}
+
+.club-content {
+    margin-top: 0 !important;
+    .club-form {
+        .item {
+            width: 100%;
+            height: 71px;
+            padding: 0 17px;
+            display: flex;
+            align-items: center;
+            background: $colorWhite;
+            border-top: 1px solid $colorGrayLight;
+            .state-icon {
+                margin-right: 16px;
+            }
+            .text {
+                .date {
+                    font-size: 11px;
+                    line-height: 15px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.44px;
+                    color: $colorGray;
+                }
+                .score {
+                    font-size: 15px;
+                    line-height: 21px;
+                    color: $colorText;
+                    letter-spacing: 0.44px;
+                    margin-top: 2px;
+                    .bold-text {
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+                }
+                .league {
+                    font-size: 11px;
+                    line-height: 15px;
+                    color: $colorText;
+                    letter-spacing: 0.44px;
+                }
+            }
+            i {
+                margin-left: auto;
+                color: $colorText;
+                font-size: 14px;
+            }
+
+        }
+        .state-icon {
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.41px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $colorWhite;
+            font-family: $fontSecondary;
+            &.green {
+                background: $colorGreen;
+            }
+            &.red {
+                background: $colorRed;
+            }
+            &.gray {
+                background: $colorGray;
+            }
+        }
+    }
+
+    .club-media {
+        .media-list {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+    .club-information-list {
+        border-top: 1px solid $colorGrayLight;
+        .item {
+            padding: 17px 0;
+            min-height: 55px;
+            .title {
+                font-size: 11px;
+                line-height: 15px;
+                letter-spacing: 0.44px;
+                color: $colorText;
+                opacity: 0.5;
+                margin-bottom: 2px;
+            }
+            .text {
+                font-size: 15px;
+                line-height: 21px;
+                letter-spacing: 0.44px;
+                text-transform: uppercase;
+                span {
+                    color: $colorText;
+                }
+                a {
+                    color: $colorBlue;
+                }
+            }
+            .list-item {
+                display: flex;
+                justify-content: space-between;
+                font-size: 15px;
+                line-height: 21px;
+                letter-spacing: 0.44px;
+                color: $colorText;
+                .text-gray {
+                    display: inline-block;
+                    margin-right: 5px;
+                    color: rgba(32,32,32,0.5)
+                }
+            }
+            .list-item + .list-item {
+                margin-top: 17px;
+            }
+        }
+        .item + .item {
+            border-top: 1px solid $colorGrayLight;
+        }
+    }
+
+
+    .match-stat {
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: $colorWhite;
+            height: 40px;
+            padding: 17px;
+            .name {
+                font-size: 15px;
+                line-height: 21px;
+                letter-spacing: 0.44px;
+                color: $colorGray;
+            }
+            .num {
+                font-family: $fontSecondary;
+                font-size: 18px;
+                line-height: 18px;
+                color: $colorGray;
+            }
+            &:first-child {
+                height: 54px;
+                color: $colorText;
+                .name, .num {
+                    color: $colorText;
+                }
+                .name {
+                    font-weight: 700;
+                }
+            }
+        }
+        .item + .item {
+            border-top: 1px solid $colorGrayLight;
+        }
+    }
+
+    .club-player-block {
+        .title {
+            padding: 7px 17px;
+            font-size: 15px;
+            line-height: 21px;
+            letter-spacing: 0.44px;
+            color: $colorText;
+            font-weight: 700;
+            border-bottom: 1px solid $colorGrayLight;
+        }
+    }
+
+    .club-fixtures-matches {
+        background: $colorGrayLight;
+    }
+}
+
+
+.clubs-page {
+    margin-bottom: 28px;
+}

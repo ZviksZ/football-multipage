@@ -1,0 +1,557 @@
+<% var data = {
+title: "Главная | RPL"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section bg-white match-main-section" id="main-matches">
+    <div class="section-title with-select">
+        <span>Matches</span>
+        <select class="custom-select" name="" id="matches-select">
+            <option value="1" selected>Matchweek 1</option>
+            <option value="2">Matchweek 2</option>
+            <option value="3">Matchweek 3</option>
+            <option value="3">Matchweek 4</option>
+            <option value="3">Matchweek 5</option>
+            <option value="3">Matchweek 6</option>
+            <option value="3">Matchweek 7</option>
+            <option value="3">Matchweek 8</option>
+            <option value="3">Matchweek 9</option>
+            <option value="3">Matchweek 10</option>
+            <option value="3">Matchweek 11</option>
+            <option value="3">Matchweek 12</option>
+            <option value="3">Matchweek 13</option>
+            <option value="3">Matchweek 14</option>
+            <option value="3">Matchweek 15</option>
+            <option value="3">Matchweek 16</option>
+            <option value="3">Matchweek 17</option>
+            <option value="3">Matchweek 18</option>
+            <option value="3">Matchweek 19</option>
+            <option value="3">Matchweek 20</option>
+            <option value="3">Matchweek 21</option>
+            <option value="3">Matchweek 22</option>
+            <option value="3">Matchweek 23</option>
+            <option value="3">Matchweek 24</option>
+            <option value="3">Matchweek 25</option>
+            <option value="3">Matchweek 26</option>
+            <option value="3">Matchweek 27</option>
+            <option value="3">Matchweek 28</option>
+            <option value="3">Matchweek 29</option>
+            <option value="3">Matchweek 30</option>
+        </select>
+    </div>
+
+    <div id="matches-container">
+        <div class="loader-wrap">
+            <div class="loader"></div>
+        </div>
+
+        <!--<div class="match-caption">
+            <span>Friday 15 August 2020</span>
+            <span class="league-name">RPL</span>
+        </div>
+
+        <a href="#" class="match-item">
+            <span class="live-icon"></span>
+            <div class="club home">
+                <span class="club__name">Zenit</span>
+                <img class="club__logo" src="./img/clubs/zenit.svg" alt="zenit">
+            </div>
+            <div class="result"><span>3:2</span></div>
+            <div class="club away">
+                <img class="club__logo" src="./img/clubs/lokomotiv.svg" alt="lokomotiv">
+                <span class="club__name">Lokomotiv</span>
+            </div>
+            <i class="icon-right-arrow match-arrow"></i>
+        </a>
+        <a href="#" class="match-item">
+            <div class="club home">
+                <span class="club__name">PFC CSKA</span>
+                <img class="club__logo" src="./img/clubs/cska.svg" alt="cska">
+            </div>
+            <div class="result time"><span>18:30</span></div>
+            <div class="club away">
+                <img class="club__logo" src="./img/clubs/dinamo.svg" alt="dinamo">
+                <span class="club__name">Dynamo</span>
+            </div>
+            <i class="icon-right-arrow match-arrow"></i>
+        </a>
+
+        <div class="match-caption">
+            <span>Friday 15 August 2020</span>
+        </div>
+
+        <a href="#" class="match-item">
+            <span class="live-icon"></span>
+            <div class="club home">
+                <span class="club__name">Zenit</span>
+                <img class="club__logo" src="./img/clubs/zenit.svg" alt="zenit">
+            </div>
+            <div class="result"><span>3:2</span></div>
+            <div class="club away">
+                <img class="club__logo" src="./img/clubs/lokomotiv.svg" alt="lokomotiv">
+                <span class="club__name">Lokomotiv</span>
+            </div>
+            <i class="icon-right-arrow match-arrow"></i>
+        </a>
+        <a href="#" class="match-item">
+            <div class="club home">
+                <span class="club__name">PFC CSKA</span>
+                <img class="club__logo" src="./img/clubs/cska.svg" alt="cska">
+            </div>
+            <div class="result time"><span>18:30</span></div>
+            <div class="club away">
+                <img class="club__logo" src="./img/clubs/dinamo.svg" alt="dinamo">
+                <span class="club__name">Dynamo</span>
+            </div>
+            <i class="icon-right-arrow match-arrow"></i>
+        </a>-->
+    </div>
+
+    <div class="detail-link">
+        <a href="#">
+            <span>Fixtures</span>
+            <i class="icon-right-arrow"></i>
+        </a>
+    </div>
+</section>
+
+<section class="section bg-white news-section">
+    <div class="section-title">
+        <span>Latest News</span>
+    </div>
+
+    <div class="news-list">
+        <a href="#" class="news-item news-item-first">
+            <div class="img" style="background-image: url('./img/news/1.jpg')"></div>
+            <div class="date section-text">12 Aug 2020</div>
+            <div class="section-subtitle">RPL matchday 2 YouTube broadcast schedule</div>
+        </a>
+
+        <a href="#" class="news-item">
+            <div class="img" style="background-image: url('./img/news/2.png')"></div>
+            <p>Kirill Levnikov to take charge of Lokomotiv vs Krasnodarbreaks two-year drought</p>
+        </a>
+
+        <a href="#" class="news-item">
+            <div class="img" style="background-image: url('./img/news/3.png')"></div>
+            <p>RPL kick off key events: Dzyuba scores again against newcomers, Dzagoev breaks two-year drought</p>
+        </a>
+
+        <a href="#" class="news-item">
+            <div class="img" style="background-image: url('./img/news/4.png')"></div>
+            <p>Rybchinsky the spark as Lokomotiv see off Rubin</p>
+        </a>
+
+        <a href="#" class="news-item">
+            <div class="img" style="background-image: url('./img/news/5.jpg')"></div>
+            <p>RPL stadiums: Volgograd Arena</p>
+        </a>
+    </div>
+    <div class="detail-link">
+        <a href="#">
+            <span>News</span>
+            <i class="icon-right-arrow"></i>
+        </a>
+    </div>
+</section>
+
+<section class="section bg-white tournament-table" id="tournament-table-section">
+    <div class="section-title with-select">
+        <span>RPL table</span>
+        <select class="custom-select" name="" id="tournament-table-select">
+            <option value="1" selected>Matchweek 1</option>
+            <option value="2">Matchweek 2</option>
+            <option value="3">Matchweek 3</option>
+            <option value="3">Matchweek 4</option>
+            <option value="3">Matchweek 5</option>
+            <option value="3">Matchweek 6</option>
+            <option value="3">Matchweek 7</option>
+            <option value="3">Matchweek 8</option>
+            <option value="3">Matchweek 9</option>
+            <option value="3">Matchweek 10</option>
+            <option value="3">Matchweek 11</option>
+            <option value="3">Matchweek 12</option>
+            <option value="3">Matchweek 13</option>
+            <option value="3">Matchweek 14</option>
+            <option value="3">Matchweek 15</option>
+            <option value="3">Matchweek 16</option>
+            <option value="3">Matchweek 17</option>
+            <option value="3">Matchweek 18</option>
+            <option value="3">Matchweek 19</option>
+            <option value="3">Matchweek 20</option>
+            <option value="3">Matchweek 21</option>
+            <option value="3">Matchweek 22</option>
+            <option value="3">Matchweek 23</option>
+            <option value="3">Matchweek 24</option>
+            <option value="3">Matchweek 25</option>
+            <option value="3">Matchweek 26</option>
+            <option value="3">Matchweek 27</option>
+            <option value="3">Matchweek 28</option>
+            <option value="3">Matchweek 29</option>
+            <option value="3">Matchweek 30</option>
+        </select>
+    </div>
+    <div id="tournament-table-container">
+        <div class="loader-wrap">
+            <div class="loader"></div>
+        </div>
+        <table class="table t-t hide" id="tournament-table">
+            <thead>
+            <tr>
+                <th colspan="3">Club</th>
+                <th>G</th>
+                <th>S-M</th>
+                <th>P</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<section class="section bg-white scorers-table">
+    <div class="section-title">
+        <span>GOALSCORERS</span>
+    </div>
+    <table class="table t-t">
+        <thead>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>G/P</th>
+            <th>G</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr data-player-link="#">
+                <td class="photo">
+                    <div class="img" style="background-image: url('./img/players/chalov.jpg')"></div>
+                </td>
+                <td class="name">
+                    <a href="#" class="wrap">
+                        <img src="./img/clubs/cska.svg" alt="" class="logo">
+                        <span>Chalov Fedor</span>
+                    </a>
+                </td>
+                <td class="goals-type"><span>14/7</span></td>
+                <td class="goals"><span>24</span></td>
+            </tr>
+            <tr data-player-link="#">
+                <td class="photo">
+                    <div class="img" style="background-image: url('./img/players/azmun.jpg')"></div>
+                </td>
+                <td class="name">
+                    <a href="#" class="wrap">
+                        <img src="./img/clubs/zenit.svg" alt="" class="logo">
+                        <span>Azmoun Sardar</span>
+                    </a>
+                </td>
+                <td class="goals-type"><span>14/7</span></td>
+                <td class="goals"><span>24</span></td>
+            </tr>
+            <tr data-player-link="#">
+                <td class="photo">
+                    <div class="img" style="background-image: url('./img/players/driussi.jpg')"></div>
+                </td>
+                <td class="name">
+                    <a href="#" class="wrap">
+                        <img src="./img/clubs/zenit.svg" alt="" class="logo">
+                        <span>Driussi Sebastián</span>
+                    </a>
+                </td>
+                <td class="goals-type"><span>14/7</span></td>
+                <td class="goals"><span>24</span></td>
+            </tr>
+            <tr data-player-link="#">
+                <td class="photo">
+                    <div class="img" style="background-image: url('./img/players/miranchuk.jpg')"></div>
+                </td>
+                <td class="name">
+                    <a href="#" class="wrap">
+                        <img src="./img/clubs/lokomotiv.svg" alt="" class="logo">
+                        <span>Miranchuk Alexey</span>
+                    </a>
+                </td>
+                <td class="goals-type"><span>14/7</span></td>
+                <td class="goals"><span>24</span></td>
+            </tr>
+            <tr data-player-link="#">
+                <td class="photo">
+                    <div class="img" style="background-image: url('./img/players/klaesson.jpg')"></div>
+                </td>
+                <td class="name">
+                    <a href="#" class="wrap">
+                        <img src="./img/clubs/krasnodar.svg" alt="" class="logo">
+                        <span>Viktor Claesson</span>
+                    </a>
+                </td>
+                <td class="goals-type"><span>14/7</span></td>
+                <td class="goals"><span>24</span></td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+<section class="section bg-white media">
+    <div class="container">
+        <div class="custom-tabs__container">
+            <div class="tabs custom-tabs">
+                <div class="item active" data-tab="1">Photos</div>
+                <div class="item" data-tab="2">Video</div>
+                <div class="item" data-tab="3">Show all</div>
+            </div>
+
+            <div class="custom-tabs__item" data-tab="1">
+                <div class="media-list">
+                    <a href="#" class="item item-first">
+                        <div class="img" style="background-image: url('./img/media/2.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">28</div>
+                                <div class="icon photo">
+                                    <i class="icon-photo"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">28</div>
+                                <div class="icon photo">
+                                    <i class="icon-photo"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">28</div>
+                                <div class="icon photo">
+                                    <i class="icon-photo"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">28</div>
+                                <div class="icon photo">
+                                    <i class="icon-photo"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">28</div>
+                                <div class="icon photo">
+                                    <i class="icon-photo"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="custom-tabs__item" data-tab="2">
+                <div class="media-list">
+                    <a href="#" class="item item-first" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">3:09</div>
+                                <div class="icon video">
+                                    <i class="icon-dropdown"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">3:09</div>
+                                <div class="icon video">
+                                    <i class="icon-dropdown"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">3:09</div>
+                                <div class="icon video">
+                                    <i class="icon-dropdown"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">3:09</div>
+                                <div class="icon video">
+                                    <i class="icon-dropdown"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">3:09</div>
+                                <div class="icon video">
+                                    <i class="icon-dropdown"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="custom-tabs__item" data-tab="3">
+                <div class="media-list">
+                    <a href="#" class="item item-first" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                        <div class="img" style="background-image: url('./img/media/2.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">3:09</div>
+                                <div class="icon video">
+                                    <i class="icon-dropdown"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">28</div>
+                                <div class="icon photo">
+                                    <i class="icon-photo"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">3:09</div>
+                                <div class="icon video">
+                                    <i class="icon-dropdown"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">28</div>
+                                <div class="icon photo">
+                                    <i class="icon-photo"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="img" style="background-image: url('./img/media/1.jpg')">
+                            <div class="img-info">
+                                <div class="numbers">28</div>
+                                <div class="icon photo">
+                                    <i class="icon-photo"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                            <div class="text">Today 15:55</div>
+                            <div class="text">10K views</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="detail-link">
+        <a href="#">
+            <span>Media</span>
+            <i class="icon-right-arrow"></i>
+        </a>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

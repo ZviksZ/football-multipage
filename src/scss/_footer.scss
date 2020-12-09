@@ -1,0 +1,89 @@
+.footer {
+    margin-top: auto !important;
+    background: transparent;
+    .footer__partners-wrap {
+        background: $colorWhite;
+        .footer__partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: $colorWhite;
+            padding: 20px;
+            width: 100%;
+            margin: 0 auto;
+            @include only-mobile {
+                width: 375px;
+            }
+            a {
+                width: 100%;
+                max-width: 166px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 17px;
+                @include only-mobile {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        background: $colorWhite;
+        padding: 15px 19px 19px;
+        margin: 10px 0;
+        .footer__stores {
+            display: flex;
+            justify-content: center;
+            a {
+                display: inline-block;
+                margin: 0 15px;
+            }
+        }
+        .footer__socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+            a {
+                margin: 0 12px;
+                color: $colorText;
+                font-size: 20px;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                @media screen and (max-width: 359px){
+                    margin: 0 8px;
+                }
+            }
+        }
+
+
+        .footer__policy {
+            text-align: center;
+            a {
+                color: $colorBlue;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .footer__copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 17px;
+        background: $colorWhite;
+        a {
+            margin-left: 15px;
+        }
+    }
+
+
+}

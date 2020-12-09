@@ -1,0 +1,129 @@
+<% var data = { title: "Referee detail | RPL" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section bg-white referee-header">
+    <div class="referee-header__photo" style="background-image: url('/img/referee/1.jpg')"></div>
+    <div class="referee-header__info">
+        <div class="section-title">
+            <span>Москалёв Владимир Викторович</span>
+        </div>
+        <p class="section-text">
+            Обслуживает турниры РПЛ МП КР с 2001 г.
+        </p>
+        <div class="referee-header__stats">
+            <div class="item">
+                <div class="icon">
+                    <i class="icon-calendar"></i>
+                </div>
+                <span>11.05.1947 г.</span>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <img alt="" src="./img/russia.svg">
+                </div>
+                <span>САНКТ-ПЕТЕРБУРГ</span>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <img alt="" src="./img/referee/referee-stat.svg">
+                </div>
+                <span>СУДЬЯ FIFA</span>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <img alt="" src="./img/referee/referee-stat.svg">
+                </div>
+                <span>1 КАТЕГОРИЯ</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section bg-white referee-section">
+    <div class="section-title">
+        <span>Stats</span>
+    </div>
+
+    <table class="referee-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>All</th>
+                <th>Home team</th>
+                <th>Away team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="stat-name">Все матчи</td>
+                <td>163</td>
+                <td>644</td>
+                <td>644</td>
+            </tr>
+            <tr>
+                <td class="stat-name">Судья в матчах ЧР</td>
+                <td>163</td>
+                <td>644</td>
+                <td>644</td>
+            </tr>
+            <tr>
+                <td class="stat-name">Желтые карточки</td>
+                <td>163</td>
+                <td>644</td>
+                <td>644</td>
+            </tr>
+            <tr>
+                <td class="stat-name">Вторые желтые</td>
+                <td>163</td>
+                <td>644</td>
+                <td>644</td>
+            </tr>
+            <tr>
+                <td class="stat-name">Красные карточки</td>
+                <td>163</td>
+                <td>644</td>
+                <td>644</td>
+            </tr>
+            <tr>
+                <td class="stat-name">Пенальти</td>
+                <td>163</td>
+                <td>644</td>
+                <td>644</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section>
+    <div class="referee-text">
+        <p class="section-text">
+            В статистике дисциплинарных нарушений учитываются только матчи Премьер-Лиги с участием данного арбитра в роли Судьи.
+        </p>
+    </div>
+
+</section>
+
+
+<section class="section bg-white referee-section margin-bottom-x2">
+    <div class="section-title">
+        <span>УЧАСТИЕ АРБИТРА В МАТЧАХ</span>
+    </div>
+    <div class="section-title with-only-select">
+        <select class="custom-select" name="" id="referee-matches-season">
+            <option value="1" selected>Season 2020/21</option>
+            <option value="2">Season 2019/20</option>
+        </select>
+    </div>
+    <div class="referee-matches" id="referee-matches" data-referee="1">
+        <a href="/" class="referee-match-item">
+            <div class="info">
+                <div class="status">Резервный судья</div>
+                <div class="match">
+                    <span class="score">0:2</span>Краснодар - Арсенал
+                </div>
+                <span class="date">22 Июля 2020 — РПЛ 3 тур</span>
+            </div>
+            <i class="icon-right-arrow"></i>
+        </a>
+    </div>
+</section>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

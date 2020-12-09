@@ -1,0 +1,821 @@
+<% var data = { title: "Player | RPL" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<section class="section player-header">
+    <div class="player-header__top">
+        <div class="photo" style="background-image: url(./img/players/chalov.jpg)"></div>
+
+        <div class="info">
+            <div class="number club-color-999">22</div>
+            <div class="name">Aleksandr Sobolev</div>
+            <div class="club">
+                <img alt="" class="logo" src="./img/clubs/spartak.svg">
+                <span class="amplua">Forward</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="player-header__bottom">
+        <div class="container">
+            <div class="player-header__info">
+                <div class="item">
+                    <div class="type">Nationality</div>
+                    <div class="info">
+                        <div class="icon">
+                            <img alt="" src="./img/russia.svg">
+                        </div>
+                        <span>Russian Federation</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="type">Date of Birth</div>
+                    <div class="info">
+                        <div class="icon">
+                            <i class="icon-calendar"></i>
+                        </div>
+                        <span>09.02.1996 (24)</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="type">Weight</div>
+                    <div class="info">
+                        <div class="icon">
+                            <i class="icon-weight"></i>
+                        </div>
+                        <span>179 cm</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="type">Height</div>
+                    <div class="info">
+                        <div class="icon">
+                            <i class="icon-height"></i>
+                        </div>
+                        <span>78 kg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section players-page no-margin-top" data-player="1352" id="player-content">
+    <div class="custom-tabs__container">
+        <!-- Скрыто до договоренности о полном функционале
+       <div class="section-block">
+           <div class="container">
+               <div class="tabs tabs-double custom-tabs player-tabs">
+                   <div class="item " data-tab="stats">stats</div>
+                   <div class="item " data-tab="overview">overview</div>
+               </div>
+           </div>
+       </div> -->
+       <div class="section-content-wrap">
+           <!-- Скрыто до договоренности о полном функционале
+          <div class="custom-tabs__item" id="player-stats" data-tab="stats">
+              <div class="section-block">
+                  <div class="player-games-info" id="player-games-info">
+                      &lt;!&ndash;<div class="item">
+                          <span class="num">16</span>
+                          <span class="type">Matches</span>
+                      </div>
+                      <div class="item">
+                          <span class="num">840</span>
+                          <span class="type">Minutes</span>
+                      </div>
+                      <div class="item">
+                          <span class="num">12</span>
+                          <span class="type">Goals</span>
+                      </div>&ndash;&gt;
+                   </div>
+               </div>
+
+
+               <div class="player-stats-blocks">
+                   <div class="section-block player-attack-block k1" id="player-attack-block">
+                       <div class="section-title">
+                           <span>ATTACK</span>
+                       </div>
+                       <div class="section-content attack-block-items">
+                           &lt;!&ndash;<div class="attack-block-items">
+                               <div class="container">
+
+                                   <div class="attack-title">How was scored the goal</div>
+                                   <div class="human-wrapper" id="player-how-score">
+                                       <div class="human"></div>
+                                       <div class="body-parts">
+                                           <div class="top left">
+                                               <div class="num">3</div>
+                                               <div class="desc">Головой</div>
+                                           </div>
+                                           <div class="top right">
+                                               <div class="num num-null">0</div>
+                                               <div class="desc">Телом</div>
+                                           </div>
+                                           <div class="bottom left">
+                                               <div class="num num-null">0</div>
+                                               <div class="desc">Правой ногой</div>
+                                           </div>
+                                           <div class="bottom right">
+                                               <div class="num">1</div>
+                                               <div class="desc">Левой ногой</div>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                   <div class="attack-title">Where was scored the goal</div>
+                                   <div class="gate-wrapper" id="player-where-score">
+                                       <div class="gate">
+                                           <div class="item"></div>
+                                           <div class="item">
+                                               <div class="num" style="width: 30px; height: 30px;">1</div>
+                                           </div>
+                                           <div class="item"></div>
+                                           <div class="item"></div>
+                                           <div class="item"></div>
+                                           <div class="item"></div>
+                                       </div>
+                                   </div>
+
+                                   <div class="attack-title">Where scored from</div>
+                                   <div class="field-wrap" id="player-field-scored">
+                                       <div class="player-field">
+                                           <div class="first-half"></div>
+                                           <div class="gate"></div>
+                                           <div class="center"></div>
+                                           <div class="second-half">
+                                               <div class="border"></div>
+                                               <div class="border right"></div>
+                                           </div>
+                                           <div class="point " style="left:34.264705882352935%; top:13.384615384615389%"></div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="attack-stats">
+                               <div class="player-stats-item">
+                                   <span>Goals per match</span>
+                                   <span class="num">0.32</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Freekicks scored</span>
+                                   <span class="num">2</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Penalties</span>
+                                   <span class="num">4</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Shots</span>
+                                   <span class="num">34</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Interceptions</span>
+                                   <span class="num">88</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Big chances missed</span>
+                                   <span class="num">0</span>
+                               </div>
+
+                               <div class="player-stats-charts">
+                                   <div class="item">
+                                       <div class="circle-item" data-percent="8">
+                                           <span class="number">1</span>
+                                           <span class="number-percent">8%</span>
+                                       </div>
+                                       <p class="text">
+                                           Penalties scored
+                                       </p>
+                                   </div>
+                                   <div class="item">
+                                       <div class="circle-item" data-percent="48">
+                                           <span class="number">15</span>
+                                           <span class="number-percent">48%</span>
+                                       </div>
+                                       <p class="text">
+                                           Shots on target
+                                       </p>
+                                   </div>
+                               </div>
+
+                           </div>&ndash;&gt;
+                       </div>
+
+                   </div>
+                   <div class="section-block player-fitness-block k4" id="player-fitness-block">
+                       <div class="section-title">
+                           <span>Fitness</span>
+                       </div>
+
+                       <div class="section-content">
+                           &lt;!&ndash;<div class="graph-wrap">
+                               <div class="graph-col graph-header">
+                                   <div class="line-header">км/ч</div>
+                                   <div class="vertical-line">
+                                       <div class="divide min">0</div>
+                                       <div class="divide half-min"></div>
+                                       <div class="divide middle">20</div>
+                                       <div class="divide half-middle"></div>
+                                       <div class="divide max">40</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="29.5" style="height: 73.75%;"></div>
+                                       <div class="item" data-info="6.6" style="height: 16.499999999999996%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/150.svg"></div>
+                                           <div class="score">1:1</div>
+                                           <div class="logo-team away"><img src="./img/clubs/3.svg"></div>
+                                       </div>
+                                       <div class="date">19 Сен 2020</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="31.7" style="height: 79.25%;"></div>
+                                       <div class="item" data-info="6.1" style="height: 15.25%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/150.svg"></div>
+                                           <div class="score">3:1</div>
+                                           <div class="logo-team away"><img src="https://premierliga.ru/netcat_files/6/6/fk_himki_1.svg"></div>
+                                       </div>
+                                       <div class="date">12 Сен 2020</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="31.7" style="height: 79.25%;"></div>
+                                       <div class="item" data-info="6.5" style="height: 16.25%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/150.svg"></div>
+                                           <div class="score">1:0</div>
+                                           <div class="logo-team away"><img src="./img/clubs/584.svg"></div>
+                                       </div>
+                                       <div class="date">22 Авг 2020</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="28.8" style="height: 72%;"></div>
+                                       <div class="item" data-info="6.5" style="height: 16.25%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/150.svg"></div>
+                                           <div class="score">1:1</div>
+                                           <div class="logo-team away"><img src="./img/clubs/5.svg"></div>
+                                       </div>
+                                       <div class="date">19 Авг 2020</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="27.7" style="height: 69.25%;"></div>
+                                       <div class="item" data-info="6.1" style="height: 15.25%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/4.svg"></div>
+                                           <div class="score">1:1</div>
+                                           <div class="logo-team away"><img src="./img/clubs/150.svg"></div>
+                                       </div>
+                                       <div class="date">15 Авг 2020</div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="legend-info">
+                               <div class="item max-speed">Maximum speed</div>
+                               <div class="item average-speed">Average speed</div>
+                           </div>
+                           <div class="graph-wrap distance">
+                               <div class="graph-col graph-header">
+                                   <div class="line-header">км</div>
+                                   <div class="vertical-line">
+                                       <div class="divide min">0</div>
+                                       <div class="divide half-min">5</div>
+                                       <div class="divide half-middle">10</div>
+                                       <div class="divide max">15</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="8.1" style="height: 53.99999999999999%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/150.svg"></div>
+                                           <div class="score">1:1</div>
+                                           <div class="logo-team away"><img src="./img/clubs/3.svg"></div>
+                                       </div>
+                                       <div class="date">19 Сен 2020</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="6.1" style="height: 40.666666666666664%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/150.svg"></div>
+                                           <div class="score">3:1</div>
+                                           <div class="logo-team away"><img src="https://premierliga.ru/netcat_files/6/6/fk_himki_1.svg"></div>
+                                       </div>
+                                       <div class="date">12 Сен 2020</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="8" style="height: 53.333333333333336%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/150.svg"></div>
+                                           <div class="score">1:0</div>
+                                           <div class="logo-team away"><img src="./img/clubs/584.svg"></div>
+                                       </div>
+                                       <div class="date">22 Авг 2020</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="8.8" style="height: 58.666666666666664%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/150.svg"></div>
+                                           <div class="score">1:1</div>
+                                           <div class="logo-team away"><img src="./img/clubs/5.svg"></div>
+                                       </div>
+                                       <div class="date">19 Авг 2020</div>
+                                   </div>
+                               </div>
+                               <div class="graph-col">
+                                   <div class="graph-info">
+                                       <div class="item" data-info="7.5" style="height: 50%;"></div>
+                                   </div>
+                                   <div class="match-wrap">
+                                       <div class="info">
+                                           <div class="logo-team home"><img src="./img/clubs/4.svg"></div>
+                                           <div class="score">1:1</div>
+                                           <div class="logo-team away"><img src="./img/clubs/150.svg"></div>
+                                       </div>
+                                       <div class="date">15 Авг 2020</div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="legend-info">
+                               <div class="item">Дистанция</div>
+                           </div>&ndash;&gt;
+                       </div>
+
+                   </div>
+                   <div class="section-block player-team-play-block k5" id="player-team-play-block">
+                       <div class="section-title">
+                           <span>Team Play</span>
+                       </div>
+
+                       <div class="section-content">
+                          &lt;!&ndash; <div class="player-stats-item">
+                               <span>Assists</span>
+                               <span class="num">0</span>
+                           </div>
+                           <div class="player-stats-item">
+                               <span>Passes</span>
+                               <span class="num">0</span>
+                           </div>
+                           <div class="player-stats-item">
+                               <span>Crosses</span>
+                               <span class="num">0</span>
+                           </div>
+                           <div class="player-stats-charts">
+                               <div class="item">
+                                   <div class="circle-item" data-percent="92">
+                                       <span class="number">92%</span>
+                                   </div>
+                                   <p class="text">
+                                       Passes accuracy
+                                   </p>
+                               </div>
+                               <div class="item">
+                                   <div class="circle-item" data-percent="14">
+                                       <span class="number">14%</span>
+                                   </div>
+                                   <p class="text">
+                                       Crosses accuracy
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="player-stats-item">
+                               <span>Passes per match</span>
+                               <span class="num">0</span>
+                           </div>
+                           <div class="player-stats-item">
+                               <span>Big chances created</span>
+                               <span class="num">0</span>
+                           </div>&ndash;&gt;
+                       </div>
+                   </div>
+                   <div class="section-block player-discipline-block k3" id="player-discipline-block">
+                       <div class="section-title">
+                           <span>Discipline</span>
+                       </div>
+                       <div class="section-content">
+                           &lt;!&ndash;<div class="discipline-cards" >
+                               <div class="item-card yellow">
+                                   <div class="num">1</div>
+                               </div>
+                               <div class="item-card red">
+                                   <div class="num">0</div>
+                               </div>
+                           </div>&ndash;&gt;
+                          &lt;!&ndash; <div id="discipline-list">
+                               <div class="player-stats-item">
+                                   <span>Fouls</span>
+                                   <span class="num">0</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Fouls per match</span>
+                                   <span class="num">0</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Offsides</span>
+                                   <span class="num">0</span>
+                               </div>
+
+                           </div>&ndash;&gt;
+                       </div>
+                   </div>
+                   <div class="section-block player-defence-block k2" id="player-defence-block">
+                       <div class="section-title">
+                           <span>Defence</span>
+                       </div>
+
+                       <div class="section-content">
+                           &lt;!&ndash;<div class="container">
+                               <div class="field-wrap" id="player-field-keeper">
+                                   <div class="human-header">
+                                       <div class="name">Shots map</div>
+                                   </div>
+                                   <div class="player-field">
+                                       <div class="first-half"></div>
+                                       <div class="gate"></div>
+                                       <div class="center"></div>
+                                       <div class="second-half">
+                                           <div class="border"></div>
+                                           <div class="border right"></div>
+                                       </div>
+                                       <div class="point " style="left:34.264705882352935%; top:13.384615384615389%"></div>
+                                   </div>
+                                   <div class="legend-info">
+                                       <div class="item green">Отбитые</div>
+                                       <div class="item red">Пропущенные</div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div id="defence-list">
+                               <div class="player-stats-item">
+                                   <span>Assists</span>
+                                   <span class="num">0</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Passes</span>
+                                   <span class="num">0</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Crosses</span>
+                                   <span class="num">0</span>
+                               </div>
+                               <div class="player-stats-charts">
+                                   <div class="item">
+                                       <div class="circle-item" data-percent="42">
+                                           <span class="number">3</span>
+                                           <span class="number-percent">42%</span>
+                                       </div>
+                                       <p class="text">
+                                           Tackles won
+                                       </p>
+                                   </div>
+                                   <div class="item">
+                                       <div class="circle-item" data-percent="60">
+                                           <span class="number">48</span>
+                                           <span class="number-percent">60%</span>
+                                       </div>
+                                       <p class="text">
+                                           Единоборства won
+                                       </p>
+                                   </div>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Passes per match</span>
+                                   <span class="num">0</span>
+                               </div>
+                               <div class="player-stats-item">
+                                   <span>Big chances created</span>
+                                   <span class="num">0</span>
+                               </div>
+                           </div>&ndash;&gt;
+                       </div>
+
+                   </div>
+               </div>
+           </div>-->
+            <div class="custom-tabs__item active" id="player-overview" data-tab="overview">
+                <div class="section-block">
+                    <div class="player-games-info" id="player-games-info">
+
+                    </div>
+                </div>
+
+                <div class="player-overview-attack section-block">
+                    <div class="section-title">
+                        <span>Attack</span>
+                    </div>
+
+                    <div id="player-overview-attack-list">
+                        <div class="player-stats-item">
+                            <span>Goals per match</span>
+                            <span class="num">0.32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-overview-discipline section-block">
+                    <div class="section-title">
+                        <span>discipline</span>
+                    </div>
+
+                    <div id="player-overview-discipline-list">
+                        <div class="player-stats-item">
+                            <span>Goals per match</span>
+                            <span class="num">0.32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-of-match section-block">
+                    <div class="player-of-match__slider" id="player-of-match__slider">
+                        <div class="swiper-wrapper">
+                            <!--<div class="swiper-slide">
+                                <div class="photo" style="background-image: url('./img/players/chalov-66x66.png')"></div>
+                                <div class="desc">
+                                    <div class="title">Player of the match</div>
+                                    <div class="info">
+                                        <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                                        <span class="score">4:0</span>
+                                        <img src="./img/clubs/rubin.svg" alt="" class="logo">
+                                        <span class="week">Matchweek 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="photo" style="background-image: url('./img/players/chalov-66x66.png')"></div>
+                                <div class="desc">
+                                    <div class="title">Player of the match</div>
+                                    <div class="info">
+                                        <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                                        <span class="score">4:0</span>
+                                        <img src="./img/clubs/rubin.svg" alt="" class="logo">
+                                        <span class="week">Matchweek 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="photo" style="background-image: url('./img/players/chalov-66x66.png')"></div>
+                                <div class="desc">
+                                    <div class="title">Player of the match</div>
+                                    <div class="info">
+                                        <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                                        <span class="score">4:0</span>
+                                        <img src="./img/clubs/rubin.svg" alt="" class="logo">
+                                        <span class="week">Matchweek 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="photo" style="background-image: url('./img/players/chalov-66x66.png')"></div>
+                                <div class="desc">
+                                    <div class="title">Player of the match</div>
+                                    <div class="info">
+                                        <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                                        <span class="score">4:0</span>
+                                        <img src="./img/clubs/rubin.svg" alt="" class="logo">
+                                        <span class="week">Matchweek 3</span>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="player-news section-block">
+                    <div class="section-title">
+                        <span>Latest player News</span>
+                    </div>
+
+                    <div class="news-list" id="player-news-list">
+
+
+                        <!-- <a href="#" class="news-item">
+                             <div class="img" style="background-image: url('./img/news/2.png')"></div>
+                             <p>Kirill Levnikov to take charge of Lokomotiv vs Krasnodarbreaks two-year drought</p>
+                         </a>
+
+                         <a href="#" class="news-item">
+                             <div class="img" style="background-image: url('./img/news/3.png')"></div>
+                             <p>RPL kick off key events: Dzyuba scores again against newcomers, Dzagoev breaks two-year drought</p>
+                         </a>
+
+                         <a href="#" class="news-item">
+                             <div class="img" style="background-image: url('./img/news/4.png')"></div>
+                             <p>Rybchinsky the spark as Lokomotiv see off Rubin</p>
+                         </a>
+
+                         <a href="#" class="news-item">
+                             <div class="img" style="background-image: url('./img/news/5.jpg')"></div>
+                             <p>RPL stadiums: Volgograd Arena</p>
+                         </a>-->
+                    </div>
+                    <div class="detail-link">
+                        <a href="#">
+                            <span>All player news</span>
+                            <i class="icon-right-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="player-video section-block">
+                    <div class="section-title">
+                        <span>Latest player videos</span>
+                    </div>
+
+                    <div class="container">
+                        <div class="media-list" id="player-video-list">
+                           <!-- <a href="#" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                                <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                    <div class="img-info">
+                                        <div class="numbers">3:09</div>
+                                        <div class="icon video">
+                                            <i class="icon-dropdown"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                    <div class="text">Today 15:55</div>
+                                    <div class="text">10K views</div>
+                                </div>
+                            </a>
+                            <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                                <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                    <div class="img-info">
+                                        <div class="numbers">3:09</div>
+                                        <div class="icon video">
+                                            <i class="icon-dropdown"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                    <div class="text">Today 15:55</div>
+                                    <div class="text">10K views</div>
+                                </div>
+                            </a>
+                            <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                                <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                    <div class="img-info">
+                                        <div class="numbers">3:09</div>
+                                        <div class="icon video">
+                                            <i class="icon-dropdown"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                    <div class="text">Today 15:55</div>
+                                    <div class="text">10K views</div>
+                                </div>
+                            </a>
+                            <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                                <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                    <div class="img-info">
+                                        <div class="numbers">3:09</div>
+                                        <div class="icon video">
+                                            <i class="icon-dropdown"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                    <div class="text">Today 15:55</div>
+                                    <div class="text">10K views</div>
+                                </div>
+                            </a>-->
+                        </div>
+                    </div>
+
+                    <div class="detail-link">
+                        <a href="#">
+                            <span>All player videos</span>
+                            <i class="icon-right-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="player-photos section-block">
+                    <div class="section-title">
+                        <span>Latest player photos</span>
+                    </div>
+                    <div class="photos_list" id="photos">
+                        <!--<div
+                                class="photo"
+                                data-open-modal-button="gallery-modal"
+                                data-effect-type="open-modal-fade-effect"
+                                data-slide="0"
+                                data-caption="1"
+                                data-photo="./img/photos/1.jpg"
+                                style="background-image: url(./img/photos/1.jpg)"
+                        ></div>
+                        <div
+                                class="photo"
+                                data-open-modal-button="gallery-modal"
+                                data-effect-type="open-modal-fade-effect"
+                                data-slide="1"
+                                data-caption="2"
+                                data-photo="./img/photos/2.jpg"
+                                style="background-image: url(./img/photos/2.jpg)"
+                        ></div>
+                        <div
+                                class="photo"
+                                data-open-modal-button="gallery-modal"
+                                data-effect-type="open-modal-fade-effect"
+                                data-slide="2"
+                                data-caption="3"
+                                data-photo="./img/photos/3.jpg"
+                                style="background-image: url(./img/photos/3.jpg)"
+                        ></div>
+                        <div
+                                class="photo"
+                                data-open-modal-button="gallery-modal"
+                                data-effect-type="open-modal-fade-effect"
+                                data-slide="3"
+                                data-caption="4"
+                                data-photo="./img/photos/1.jpg"
+                                style="background-image: url(./img/photos/1.jpg)"
+                        ></div>-->
+                    </div>
+
+                    <div class="detail-link">
+                        <a href="#">
+                            <span>All player photos</span>
+                            <i class="icon-right-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="player-transfers section-block">
+                    <div class="section-title">
+                        <span>TRANSFER HISTORY</span>
+                    </div>
+
+                    <div class="player-transfer-list" id="player-transfer-list">
+                        <!--<div class="item">
+                            <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                            <div class="info">
+                                <div class="club">FC Spartak Moscow</div>
+                                <div class="position">Forward — №9</div>
+                                <div class="date">From 10.08.2018 — Till 03.06.2019</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                            <div class="info">
+                                <div class="club">FC Spartak Moscow</div>
+                                <div class="position">Forward — №9</div>
+                                <div class="date">From 10.08.2018 — Till 03.06.2019</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                            <div class="info">
+                                <div class="club">FC Spartak Moscow</div>
+                                <div class="position">Forward — №9</div>
+                                <div class="date">From 10.08.2018 — Till 03.06.2019</div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

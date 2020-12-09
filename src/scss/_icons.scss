@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "rplweb";
+    src:url("../fonts/rplweb.eot");
+    src:url("../fonts/rplweb.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/rplweb.woff") format("woff"),
+    url("../fonts/rplweb.ttf") format("truetype"),
+    url("../fonts/rplweb.svg#rplweb") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+[data-icon]:before {
+    font-family: "rplweb" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+.choices:after,
+.choices__inner:after{
+    font-family: "rplweb" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-calendar:before {
+    content: "\61";
+}
+.icon-club:before {
+    content: "\62";
+}
+.icon-dropdown:before {
+    content: "\63";
+}
+.icon-dugout:before {
+    content: "\64";
+}
+.icon-external:before {
+    content: "\65";
+}
+.icon-facebook:before {
+    content: "\66";
+}
+.icon-odnoklassniki:before {
+    content: "\6a";
+}
+.icon-people:before {
+    content: "\6b";
+}
+.icon-photo:before {
+    content: "\6c";
+}
+.icon-right-arrow:before {
+    content: "\6d";
+}
+.icon-search:before {
+    content: "\6e";
+}
+.icon-sort:before {
+    content: "\6f";
+}
+.icon-stadium:before {
+    content: "\70";
+}
+.icon-telegram:before {
+    content: "\71";
+}
+.icon-tiktiok:before {
+    content: "\72";
+}
+.icon-vk:before {
+    content: "\73";
+}
+.icon-weight:before {
+    content: "\74";
+}
+.icon-youtube:before {
+    content: "\75";
+}
+.icon-twitter:before {
+    content: "\67";
+}
+.icon-height:before {
+    content: "\68";
+}
+.icon-instagram:before {
+    content: "\69";
+}

@@ -1,0 +1,462 @@
+.match-field .tactic .player.a31 {
+    left: 40%;
+}
+
+/* защитники и полузащитники 4 в ряд */
+.match-field .tactic .line-item.a1.c4 .player,
+.match-field .tactic .line-item.a2.c4 .player,
+.match-field .tactic .line-item.a1.c6 .player,
+.match-field .tactic .line-item.a2.c6 .player {
+    width: 25%;
+}
+
+
+/* 12 З Л */
+.match-field .tactic .player.a12 {
+    left: 0%;
+}
+
+.match-field .tactic.home .player.a12 {
+    left: 80%;
+}
+
+.match-field .tactic.home .line-item.a1.c4 .player.a12,
+.match-field .tactic.home .line-item.a1.c6 .player.a12 {
+    left: 75%;
+}
+
+/* 22 З ЛЦ */
+.match-field .tactic .player.a22 {
+    left: 20%;
+}
+
+.match-field .tactic.home .player.a22 {
+    left: 60%;
+}
+
+.match-field .tactic .line-item.a1.c4 .player.a22,
+.match-field .tactic .line-item.a1.c6 .player.a22 {
+    left: 25%;
+}
+
+.match-field .tactic.home .line-item.a1.c4 .player.a22,
+.match-field .tactic.home .line-item.a1.c6 .player.a22 {
+    left: 50%;
+}
+
+/* 32 З Ц */
+.match-field .tactic .player.a32 {
+    left: 40%;
+}
+
+.match-field .tactic.home .player.a32 {
+    left: 40%;
+}
+
+.match-field .tactic .line-item.a1.c4 .player.a32,
+.match-field .tactic .line-item.a1.c6 .player.a32 {
+    left: 37.5%;
+}
+
+.match-field .tactic.home .line-item.a1.c4 .player.a32,
+.match-field .tactic.home .line-item.a1.c6 .player.a32 {
+    left: 37.5%;
+}
+
+/* 42 З ПЦ */
+.match-field .tactic .player.a42 {
+    left: 60%;
+}
+
+.match-field .tactic.home .player.a42 {
+    left: 20%;
+}
+
+.match-field .tactic .line-item.a1.c4 .player.a42,
+.match-field .tactic .line-item.a1.c6 .player.a42 {
+    left: 50%;
+}
+
+.match-field .tactic.home .line-item.a1.c4 .player.a42,
+.match-field .tactic.home .line-item.a1.c6 .player.a42 {
+    left: 25%;
+}
+
+/* 52 З П */
+.match-field .tactic .player.a52 {
+    left: 80%;
+}
+
+.match-field .tactic.home .player.a52 {
+    left: 0%;
+}
+
+.match-field .tactic .line-item.a1.c4 .player.a52,
+.match-field .tactic .line-item.a1.c6 .player.a52 {
+    left: 75%;
+}
+
+.match-field .tactic.home .line-item.a1.c4 .player.a52,
+.match-field .tactic.home .line-item.a1.c6 .player.a52 {
+    left: 0;
+}
+
+/* 13 ЗП Л */
+.match-field .tactic .player.a13 {
+    left: 0%;
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a13 {
+    left: 80%;
+    top: 0;
+    bottom: auto;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a13,
+.match-field .tactic.home .line-item.a2.c6 .player.a13 {
+    left: 75%;
+}
+
+/* 14 П Л */
+.match-field .tactic .player.a14 {
+    left: 0%;
+}
+
+.match-field .tactic.home .player.a14 {
+    left: 80%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a14,
+.match-field .tactic.home .line-item.a2.c6 .player.a14 {
+    left: 75%;
+}
+
+/* 15 АП Л */
+.match-field .tactic .player.a15 {
+    left: 0%;
+    top: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a15 {
+    left: 80%;
+    top: auto;
+    bottom: 0;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a15,
+.match-field .tactic.home .line-item.a2.c6 .player.a15 {
+    left: 75%;
+}
+
+/* 23 ЗП ЛЦ */
+.match-field .tactic .player.a23 {
+    left: 20%;
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a23 {
+    left: 60%;
+    top: 0;
+    bottom: auto;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a23,
+.match-field .tactic .line-item.a2.c6 .player.a23 {
+    left: 25%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a23,
+.match-field .tactic.home .line-item.a2.c6 .player.a23 {
+    left: 50%;
+}
+
+/* 24 П ЛЦ */
+.match-field .tactic .player.a24 {
+    left: 20%;
+}
+
+.match-field .tactic.home .player.a24 {
+    left: 60%;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a24,
+.match-field .tactic .line-item.a2.c6 .player.a24 {
+    left: 25%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a24,
+.match-field .tactic.home .line-item.a2.c6 .player.a24 {
+    left: 50%;
+}
+
+/* 25 АП ЛЦ */
+.match-field .tactic .player.a25 {
+    left: 20%;
+    top: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a25 {
+    left: 60%;
+    top: auto;
+    bottom: 0;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a25,
+.match-field .tactic .line-item.a2.c6 .player.a25 {
+    left: 25%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a25,
+.match-field .tactic.home .line-item.a2.c6 .player.a25 {
+    left: 50%;
+}
+
+/* 33 ЗП Ц */
+.match-field .tactic .player.a33 {
+    left: 40%;
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a33 {
+    left: 40%;
+    top: 0;
+    bottom: auto;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a33,
+.match-field .tactic .line-item.a2.c6 .player.a33 {
+    left: 37.5%;
+}
+
+.match-field .tactic .line-item.a2.c4 .home .player.a33,
+.match-field .tactic .line-item.a2.c6 .home .player.a33 {
+    left: 37.5%;
+}
+
+/* 34 П Ц */
+.match-field .tactic .player.a34 {
+    left: 40%;
+}
+
+.match-field .tactic.home .player.a34 {
+    left: 40%;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a34,
+.match-field .tactic .line-item.a2.c6 .player.a34 {
+    left: 37.5%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a34,
+.match-field .tactic.home .line-item.a2.c6 .player.a34 {
+    left: 37.5%;
+}
+
+/* 35 АП Ц */
+.match-field .tactic .player.a35 {
+    left: 40%;
+    top: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a35 {
+    left: 40%;
+    top: auto;
+    bottom: 0;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a35,
+.match-field .tactic .line-item.a2.c6 .player.a35 {
+    left: 37.5%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a35,
+.match-field .tactic.home .line-item.a2.c6 .player.a35 {
+    left: 37.5%;
+}
+
+/* 43 ЗП ПЦ */
+.match-field .tactic .player.a43 {
+    left: 60%;
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a43 {
+    left: 20%;
+    top: 0;
+    bottom: auto;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a43,
+.match-field .tactic .line-item.a2.c6 .player.a43 {
+    left: 50%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a43,
+.match-field .tactic.home .line-item.a2.c6 .player.a43 {
+    left: 25%;
+}
+
+/* 44 П ПЦ */
+.match-field .tactic .player.a44 {
+    left: 60%;
+}
+
+.match-field .tactic.home .player.a44 {
+    left: 20%;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a44,
+.match-field .tactic .line-item.a2.c6 .player.a44 {
+    left: 50%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a44,
+.match-field .tactic.home .line-item.a2.c6 .player.a44 {
+    left: 25%;
+}
+
+/* 45 АП ПЦ */
+.match-field .tactic .player.a45 {
+    left: 60%;
+    top: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a45 {
+    left: 20%;
+    top: auto;
+    bottom: 0;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a45,
+.match-field .tactic .line-item.a2.c6 .player.a45 {
+    left: 50%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a45,
+.match-field .tactic.home .line-item.a2.c6 .player.a45 {
+    left: 25%;
+}
+
+/* 53 ЗП П */
+.match-field .tactic .player.a53 {
+    left: 80%;
+    top: auto;
+    bottom: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a53 {
+    left: 0%;
+    top: 0;
+    bottom: auto;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a53,
+.match-field .tactic .line-item.a2.c6 .player.a53 {
+    left: 75%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a53,
+.match-field .tactic.home .line-item.a2.c6 .player.a53 {
+    left: 0%;
+}
+
+/* 54 П П */
+.match-field .tactic .player.a54 {
+    left: 80%;
+}
+
+.match-field .tactic.home .player.a54 {
+    left: 0%;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a54,
+.match-field .tactic .line-item.a2.c6 .player.a54 {
+    left: 75%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a54,
+.match-field .tactic.home .line-item.a2.c6 .player.a54 {
+    left: 0;
+}
+
+/* 55 АП П */
+.match-field .tactic .player.a55 {
+    left: 80%;
+    top: 0;
+    margin-top: 0;
+}
+
+.match-field .tactic.home .player.a55 {
+    left: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.match-field .tactic .line-item.a2.c4 .player.a55,
+.match-field .tactic .line-item.a2.c6 .player.a55 {
+    left: 75%;
+}
+
+.match-field .tactic.home .line-item.a2.c4 .player.a55,
+.match-field .tactic.home .line-item.a2.c6 .player.a55 {
+    left: 0;
+}
+
+/* 16 Ф Л */
+.match-field .tactic .player.a16 {
+    left: 0%;
+}
+
+.match-field .tactic.home .player.a16 {
+    left: 80%;
+}
+
+/* 26 Ф ЛЦ */
+.match-field .tactic .player.a26 {
+    left: 20%;
+}
+
+.match-field .tactic.home .player.a26 {
+    left: 60%;
+}
+
+/* 36 Ф Ц */
+.match-field .tactic .player.a36 {
+    left: 40%;
+}
+
+.match-field .tactic.home .player.a36 {
+    left: 40%;
+}
+
+/* 46 Ф ПЦ */
+.match-field .tactic .player.a46 {
+    left: 60%;
+}
+
+.match-field .tactic.home .player.a46 {
+    left: 20%;
+}
+
+/* 56 Ф П */
+.match-field .tactic .player.a56 {
+    left: 80%;
+}
+
+.match-field .tactic.home .player.a56 {
+    left: 0%;
+}

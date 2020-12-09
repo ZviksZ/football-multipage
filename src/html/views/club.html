@@ -1,0 +1,737 @@
+<% var data = { title: "Club | RPL" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section club-header club-1">
+    <div class="content">
+        <div class="club-header__top">
+            <div class="bg" style="background-image: url(./img/stadiums/1.jpg)"></div>
+            <div class="bg-overlay"></div>
+            <div class="club-info">
+                <img alt="" class="club-logo" src="./img/clubs/spartak.svg">
+                <div class="club-name">Spartak</div>
+                <div class="club-stadium">moscow — Otkritie Arena</div>
+            </div>
+        </div>
+        <div class="club-socials">
+            <a href="#">
+                <i class="icon-youtube"></i>
+                <img alt="" src="./img/club-socials/youtube.svg">
+            </a>
+            <a href="#">
+                <i class="icon-vk"></i>
+                <img alt="" src="./img/club-socials/vk.svg">
+            </a>
+            <a href="#">
+                <i class="icon-instagram"></i>
+                <img alt="" src="./img/club-socials/instagram.svg">
+            </a>
+            <a href="#">
+                <i class="icon-twitter"></i>
+                <img alt="" src="./img/club-socials/twitter.svg">
+            </a>
+            <a href="#">
+                <i class="icon-facebook"></i>
+                <img alt="" src="./img/club-socials/facebook.svg">
+            </a>
+            <a href="#">
+                <i class="icon-odnoklassniki"></i>
+                <img alt="" src="./img/club-socials/ok.svg">
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section club-content" data-club-id="13693" id="club-content">
+    <div class="section-tabs">
+        <div class="item " data-club-tab="overview">overview</div>
+        <div class="item" data-club-tab="team">team</div>
+        <div class="item " data-club-tab="fixtures">fixtures</div>
+        <div class="item " data-club-tab="stats">stats</div>
+    </div>
+
+
+    <div class="section-content-wrap">
+        <div class="section-tab-page" data-club-tab="overview">
+            <div class="club-form section-block">
+                <div class="section-title">
+                    <span>form</span>
+                </div>
+                <div id="club-form-list">
+                    <!--<a href="#" class="item">
+                        <div class="state-icon red">L</div>
+                        <div class="text">
+                            <div class="date">22 July 2020</div>
+                            <div class="score"><span class="bold-text">3:2</span>Spartak-Lokomotiv</div>
+                            <div class="league">Tinkoff RPL</div>
+                        </div>
+                        <i class="icon-right-arrow"></i>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="state-icon green">W</div>
+                        <div class="text">
+                            <div class="date">22 July 2020</div>
+                            <div class="score"><span class="bold-text">3:2</span>Spartak-Lokomotiv</div>
+                            <div class="league">Tinkoff RPL</div>
+                        </div>
+                        <i class="icon-right-arrow"></i>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="state-icon red">L</div>
+                        <div class="text">
+                            <div class="date">22 July 2020</div>
+                            <div class="score"><span class="bold-text">3:2</span>Spartak-Lokomotiv</div>
+                            <div class="league">Tinkoff RPL</div>
+                        </div>
+                        <i class="icon-right-arrow"></i>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="state-icon green">W</div>
+                        <div class="text">
+                            <div class="date">22 July 2020</div>
+                            <div class="score"><span class="bold-text">3:2</span>Spartak-Lokomotiv</div>
+                            <div class="league">Tinkoff RPL</div>
+                        </div>
+                        <i class="icon-right-arrow"></i>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="state-icon gray">D</div>
+                        <div class="text">
+                            <div class="date">22 July 2020</div>
+                            <div class="score"><span class="bold-text">3:2</span>Spartak-Lokomotiv</div>
+                            <div class="league">Tinkoff RPL</div>
+                        </div>
+                        <i class="icon-right-arrow"></i>
+                    </a>-->
+                </div>
+            </div>
+
+            <div class="club-scorers section-block scorers-table">
+                <div class="section-title">
+                    <span>GOALSCORERS</span>
+                </div>
+                <table class="table t-t">
+                    <thead>
+                    <tr>
+                        <th colspan="2">Name</th>
+                        <th>G/P</th>
+                        <th>G</th>
+                    </tr>
+                    </thead>
+                    <tbody id="club-scorers-rows">
+                    <!-- <tr data-player-link="#">
+                         <td class="photo">
+                             <div class="img" style="background-image: url('./img/players/chalov.jpg')"></div>
+                         </td>
+                         <td class="name">
+                             <a href="#" class="wrap">
+                                 <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                                 <span>Chalov Fedor</span>
+                             </a>
+                         </td>
+                         <td class="goals-type"><span>14/7</span></td>
+                         <td class="goals"><span>24</span></td>
+                     </tr>
+                     <tr data-player-link="#">
+                         <td class="photo">
+                             <div class="img" style="background-image: url('./img/players/azmun.jpg')"></div>
+                         </td>
+                         <td class="name">
+                             <a href="#" class="wrap">
+                                 <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                                 <span>Azmoun Sardar</span>
+                             </a>
+                         </td>
+                         <td class="goals-type"><span>14/7</span></td>
+                         <td class="goals"><span>24</span></td>
+                     </tr>
+                     <tr data-player-link="#">
+                         <td class="photo">
+                             <div class="img" style="background-image: url('./img/players/driussi.jpg')"></div>
+                         </td>
+                         <td class="name">
+                             <a href="#" class="wrap">
+                                 <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                                 <span>Driussi Sebastián</span>
+                             </a>
+                         </td>
+                         <td class="goals-type"><span>14/7</span></td>
+                         <td class="goals"><span>24</span></td>
+                     </tr>-->
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="club-news section-block">
+                <div class="section-title">
+                    <span>club News</span>
+                </div>
+
+                <div class="news-list" id="club-news-list">
+                    <!-- <div class="news-item news-item-first">
+                         <div class="img" style="background-image: url('./img/news/1.jpg')"></div>
+                         <div class="date section-text">12 Aug 2020</div>
+                         <div class="section-subtitle">RPL matchday 2 YouTube broadcast schedule</div>
+                     </div>
+
+                     <div class="news-item">
+                         <div class="img" style="background-image: url('./img/news/2.png')"></div>
+                         <p>Kirill Levnikov to take charge of Lokomotiv vs Krasnodarbreaks two-year drought</p>
+                     </div>
+
+                     <div class="news-item">
+                         <div class="img" style="background-image: url('./img/news/3.png')"></div>
+                         <p>RPL kick off key events: Dzyuba scores again against newcomers, Dzagoev breaks two-year drought</p>
+                     </div>
+
+                     <div class="news-item">
+                         <div class="img" style="background-image: url('./img/news/4.png')"></div>
+                         <p>Rybchinsky the spark as Lokomotiv see off Rubin</p>
+                     </div>
+
+                     <div class="news-item">
+                         <div class="img" style="background-image: url('./img/news/5.jpg')"></div>
+                         <p>RPL stadiums: Volgograd Arena</p>
+                     </div>-->
+                </div>
+                <div class="detail-link">
+                    <a href="#">
+                        <span>Club news</span>
+                        <i class="icon-right-arrow"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="club-media section-block">
+                <div class="section-title with-select">
+                    <span>Media</span>
+                    <select class="custom-select" name="" id="club-media-select">
+                        <option value="video" selected>Video</option>
+                        <option value="photo">Photo</option>
+                        <option value="all">Show all</option>
+                    </select>
+                </div>
+                <div class="container">
+                    <div data-type="video" id="club-video" class="media-list">
+                        <a href="#" class="item item-first" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">3:09</div>
+                                    <div class="icon video">
+                                        <i class="icon-dropdown"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">3:09</div>
+                                    <div class="icon video">
+                                        <i class="icon-dropdown"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">3:09</div>
+                                    <div class="icon video">
+                                        <i class="icon-dropdown"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">3:09</div>
+                                    <div class="icon video">
+                                        <i class="icon-dropdown"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">3:09</div>
+                                    <div class="icon video">
+                                        <i class="icon-dropdown"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-type="photo" id="club-photo" class="media-list">
+                        <a href="#" class="item item-first">
+                            <div class="img" style="background-image: url('./img/media/2.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">28</div>
+                                    <div class="icon photo">
+                                        <i class="icon-photo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">28</div>
+                                    <div class="icon photo">
+                                        <i class="icon-photo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">28</div>
+                                    <div class="icon photo">
+                                        <i class="icon-photo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">28</div>
+                                    <div class="icon photo">
+                                        <i class="icon-photo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">28</div>
+                                    <div class="icon photo">
+                                        <i class="icon-photo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-type="all" id="club-all-media" class="media-list">
+                        <a href="#" class="item item-first" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                            <div class="img" style="background-image: url('./img/media/2.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">3:09</div>
+                                    <div class="icon video">
+                                        <i class="icon-dropdown"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">28</div>
+                                    <div class="icon photo">
+                                        <i class="icon-photo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="" class="item" data-effect-type="open-modal-fade-effect" data-open-modal-button="media-video-modal" data-video="1hxl0pED3gg">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">3:09</div>
+                                    <div class="icon video">
+                                        <i class="icon-dropdown"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">28</div>
+                                    <div class="icon photo">
+                                        <i class="icon-photo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                        <a href="" class="item">
+                            <div class="img" style="background-image: url('./img/media/1.jpg')">
+                                <div class="img-info">
+                                    <div class="numbers">28</div>
+                                    <div class="icon photo">
+                                        <i class="icon-photo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="title">Top 10 Goals RPL Season 2019/20</div>
+                                <div class="text">Today 15:55</div>
+                                <div class="text">10K views</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="detail-link">
+                        <a href="#">
+                            <span>All media</span>
+                            <i class="icon-right-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-information section-block">
+                <div class="section-title">
+                    <span>information</span>
+                </div>
+
+                <div class="club-information-list">
+                    <div class="container">
+                        <div id="club-info-block">
+
+                        </div>
+                        <!-- <div class="item">
+                             <div class="title">OFFICIAL NAME</div>
+                             <div class="text">
+                                 <span>OPEN JOINT-STOCK COMPANY «FOOTBALL CLUB «SPARTAK-MOSCOW»</span>
+                             </div>
+                         </div>
+                         <div class="item">
+                             <div class="title">E-MAIL</div>
+                             <div class="text">
+                                 <a href="">SPARTAK@SPARTAK.COM</a>
+                             </div>
+                         </div>
+
+                         <div class="item item-with-list">
+                             <div class="list-item">
+                                 <span class="text-gray">SEASONS IN THE PREMIER LEAGUE</span>
+                                 <span>654</span>
+                             </div>
+                             <div class="list-item">
+                                 <span class="text-gray">SEASONS IN THE PREMIER LEAGUE</span>
+                                 <span>654</span>
+                             </div>
+                             <div class="list-item">
+                                 <span class="text-gray">SEASONS IN THE PREMIER LEAGUE</span>
+                                 <span>654</span>
+                             </div>
+                             <div class="list-item">
+                                 <span class="text-gray">SEASONS IN THE PREMIER LEAGUE</span>
+                                 <span>654</span>
+                             </div>
+                         </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-tab-page" data-club-tab="team">
+            <div class="team-block section-block">
+                <div class="section-title">
+                    <span>Forwards</span>
+                </div>
+                <div class="players-list" id="club-team-forwards">
+
+                </div>
+            </div>
+            <div class="team-block section-block">
+                <div class="section-title">
+                    <span>midfielder</span>
+                </div>
+                <div class="players-list" id="club-team-midfielders">
+
+                </div>
+            </div>
+            <div class="team-block section-block">
+                <div class="section-title">
+                    <span>defenders</span>
+                </div>
+                <div class="players-list" id="club-team-defenders">
+
+                </div>
+            </div>
+            <div class="team-block section-block">
+                <div class="section-title">
+                    <span>goalkeepers</span>
+                </div>
+                <div class="players-list" id="club-team-goalkeepers">
+
+                </div>
+            </div>
+            <div class="team-block section-block">
+                <div class="section-title">
+                    <span>management</span>
+                </div>
+                <div class="players-list" id="club-team-coach">
+
+                </div>
+            </div>
+            <div class="team-block section-block">
+                <div class="section-title">
+                    <span>Main</span>
+                </div>
+                <div class="players-list" id="club-team-staff">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="section-tab-page" data-club-tab="fixtures">
+            <div class="club-fixtures section-block">
+                <div class="section-title with-double-select">
+                    <select class="custom-select" name="" id="club-fixtures-tournament">
+                        <option value="1" data-icon="./img/cups/cup.svg" selected>All tournaments</option>
+                        <option value="2" data-icon="./img/cups/rpl.svg">All tournaments 2</option>
+                        <option value="3" data-icon="">All tournaments 3</option>
+                    </select>
+                    <select class="custom-select" name="" id="club-fixtures-season">
+                        <option value="1" selected>Season 2020/21</option>
+                        <option value="2">Season 2019/20</option>
+                    </select>
+                </div>
+
+                <div class="club-fixtures-matches" id="club-fixtures">
+                    <div id="club-fixtures-matches"></div>
+                    <!-- <div class="match-caption">
+                         <span>Friday 15 August 2020</span>
+                         <span class="league-name">
+                             <img src="./img/cups/cup.svg" alt=""><span>RPL</span>
+                         </span>
+                     </div>
+
+                     <a href="#" class="match-item">
+                         <span class="live-icon"></span>
+                         <div class="club home">
+                             <span class="club__name">Zenit</span>
+                             <img class="club__logo" src="./img/clubs/zenit.svg" alt="zenit">
+                         </div>
+                         <div class="result"><span>3:2</span></div>
+                         <div class="club away">
+                             <img class="club__logo" src="./img/clubs/lokomotiv.svg" alt="lokomotiv">
+                             <span class="club__name">Lokomotiv</span>
+                         </div>
+                         <i class="icon-right-arrow match-arrow"></i>
+                     </a>
+                     <a href="#" class="match-item match-with-coef">
+                         <span class="live-icon"></span>
+                         <div class="club home">
+                             <span class="club__name">Zenit</span>
+                             <img class="club__logo" src="./img/clubs/zenit.svg" alt="zenit">
+                         </div>
+                         <div class="result"><span>3:2</span></div>
+                         <div class="club away">
+                             <img class="club__logo" src="./img/clubs/lokomotiv.svg" alt="lokomotiv">
+                             <span class="club__name">Lokomotiv</span>
+                         </div>
+                         <div class="divider"></div>
+                         <div class="coef">
+                             <div class="item">
+                                 <span class="team">1</span>
+                                 <span class="num">2.50</span>
+                             </div>
+                             <div class="item">
+                                 <span class="team">X</span>
+                                 <span class="num">2.50</span>
+                             </div>
+                             <div class="item">
+                                 <span class="team">2</span>
+                                 <span class="num">2.50</span>
+                             </div>
+                         </div>
+                         <i class="icon-right-arrow match-arrow"></i>
+                     </a>-->
+                </div>
+            </div>
+        </div>
+        <div class="section-tab-page" data-club-tab="stats" id="club-stats">
+            <div class="custom-tabs__container">
+                <div class="section-block no-margin-top">
+                    <div class="container">
+                        <div class="tabs tabs-double custom-tabs club-stats-tabs">
+                            <div class="item " data-tab="matches">matches</div>
+                            <div class="item" data-tab="players">Players</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-tabs__item" id="club-stats-matches" data-tab="matches">
+
+
+                    <!-- <div class="match-stat section-block">
+                         <div class="item">
+                             <span class="name">Games played</span>
+                             <span class="num">3</span>
+                         </div>
+                         <div class="item">
+                             <span class="name">Games played</span>
+                             <span class="num">3</span>
+                         </div>
+                         <div class="item">
+                             <span class="name">Games played</span>
+                             <span class="num">3</span>
+                         </div>
+                     </div>
+                     <div class="match-stat section-block">
+                         <div class="item">
+                             <span class="name">Games played</span>
+                             <span class="num">3</span>
+                         </div>
+                         <div class="item">
+                             <span class="name">Games played</span>
+                             <span class="num">3</span>
+                         </div>
+                         <div class="item">
+                             <span class="name">Games played</span>
+                             <span class="num">3</span>
+                         </div>
+                     </div>-->
+                </div>
+                <div class="custom-tabs__item" id="club-stats-players" data-tab="players">
+                    <div class="club-player-block section-block" id="stats-goals">
+                        <div class="title">Goals</div>
+                        <div class="players-list"></div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="club-player-block section-block" id="stats-assists">
+                        <div class="title">Assists</div>
+                        <div class="players-list"></div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="club-player-block section-block" id="stats-goal_pass">
+                        <div class="title">Goal+pass</div>
+                        <div class="players-list"></div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="club-player-block section-block" id="stats-shots">
+                        <div class="title">Shots</div>
+                        <div class="players-list"></div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="club-player-block section-block" id="stats-tackles">
+                        <div class="title">Tackles</div>
+                        <div class="players-list"></div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--<div class="club-player-block section-block">
+                        <div class="title">Tackles</div>
+                        <div class="players-list">
+                            <a href="#" class="player-list-item player-list-item_numbers">
+                                <div class="photo" style="background-image: url(./img/players/chalov.jpg)"></div>
+                                <div class="player-info">
+                                    <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                                    <div class="name">Aleksandr Sobolev</div>
+                                    <span class="num">24</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,88 @@
+// переменные
+@import 'variables';
+
+@import 'mixins';
+
+// Шрифты
+@import 'fonts';
+
+// Иконки
+@import 'icons';
+
+// медиа-запросы
+@import 'mediaqueries';
+
+// обнуления отступов, margin и т.п.
+@import 'helper';
+
+// базовые стили шаблона
+@import 'base';
+
+// сетки
+@import 'grid';
+
+// типографика контента
+@import 'typographic';
+
+//Переключатели аля кнопки
+@import 'switchers';
+
+//Select
+@import './node_modules/choices.js/src/styles/choices.scss';
+//@import 'selects';
+
+//header
+@import 'header';
+
+@import 'main-menu';
+
+// модальные окна
+@import 'modals';
+
+// стилизация базовых элементов swiper слайдера
+@import './node_modules/swiper/swiper';
+@import 'swiper-slider';
+
+// инфографика
+@import 'infographic';
+
+
+// футер
+@import 'footer';
+
+
+// Стили матчей
+@import 'matches';
+@import 'match-tactic';
+
+// Стили новостей
+@import 'news';
+
+// Кастомизация селектов
+@import 'custom-select';
+
+// Турнирная таблица
+@import 'tournament-table';
+
+// Таблица бомбардиров
+@import 'scorers-table';
+
+// Медиа табы на главной
+@import 'media';
+
+// Клубы
+@import 'clubs';
+@import 'club-colors';
+
+// Игроки
+@import 'players';
+
+// Арбитры
+@import 'referees';
+
+//Стили для фото и галереи в модалке
+@import 'photos';
+
+//Страница статистики
+@import 'statistics';
+

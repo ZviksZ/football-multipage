@@ -1,0 +1,113 @@
+// Типографика
+
+.section {
+    display: block;
+    position: relative;
+    &.bg-white {
+        background-color: $colorWhite;
+    }
+
+
+}
+
+.section + .section {
+    margin-top: 16px;
+}
+
+.section-title {
+    position: relative;
+    font-family: $fontSecondary;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: $colorText;
+    padding: 23px 17px;
+    font-weight: 700;
+    min-height: 70px;
+    border-bottom: 1px solid $colorGrayLight;
+    background: $colorWhite;
+    span {
+        display: inline-block;
+    }
+    &.with-select {
+        span {
+            max-width: 60%;
+        }
+        .custom-select, .choices-custom, .filter-btn, .close-btn {
+            position: absolute;
+            right: 17px;
+            top: 17px;
+        }
+        .close-btn {
+            top: 0;
+            right: 0;
+        }
+    }
+    &.with-only-select {
+        .choices {
+            max-width: 100%;
+            width: 100% !important;
+        }
+    }
+    &.with-double-select {
+        .custom-select, .choices-custom {
+            position: absolute;
+            &:first-child {
+                left: 17px;
+                top: 17px;
+            }
+            &:last-child {
+                right: 17px;
+                top: 17px;
+            }
+        }
+    }
+}
+
+.section-subtitle {
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.44px;
+    color: $colorText;
+    font-weight: 700;
+}
+
+.section-text {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.44px;
+    color: $colorGray;
+}
+
+p {
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0.44px;
+    color: $colorText;
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.small-text {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+a {
+    display: inline-block;
+    font-size: 15px;
+    color: $colorBlue;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-decoration: none;
+}
+

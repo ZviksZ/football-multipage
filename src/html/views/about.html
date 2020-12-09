@@ -1,0 +1,37 @@
+<% var data = {
+title: "О турнире | RPL"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section bg-white margin-bottom ">
+    <div class="section-title">
+        <span>About the Russian Premier Liga</span>
+    </div>
+    <div class="container">
+        <img src="./img/cup.jpg" alt="" class="about-img">
+
+        <div class="section-subtitle margin-bottom">BRIEF RPL HISTORY</div>
+        <p class="margin-bottom">
+            At the end of 2001 the Russian top flight was relaunched as the Russian Football Premier League. The season ran on a spring-autumn schedule until the end of 2010, when the Russian Football Union Executive Committee decided to adjust the calendar to run from late summer to the following spring.
+        </p>
+        <p class="margin-bottom">
+            The transitional 2011/12 season became an expanded campaign, and also included relegation/promotion playoffs for the first time. After the usual 30-game season had finished the RPL split into two levels to create a further 14 fixtures, as the top half competed for European places while the bottom half battled relegation.
+        </p>
+        <div class="section-subtitle margin-bottom">FORMAT</div>
+        <p class="margin-bottom">
+            Now rebranded as the Russian Premier Liga, the top flight has 16 teams that play each other home and away to make 30 regular-season fixtures. In fact, since 1994 every Russian top-flight season bar two (1996 & 1997) has had 16 teams. With five places currently available through the RPL to qualify for the UEFA Champions League and Europa League and four relegation places, over half the league places carry a direct consequence for the following season.
+        </p>
+        <p class="margin-bottom">
+            The bottom two teams are relegated to the second-tier Football National League (FNL), while those that finish 13th and 14th take on the FNL’s 4th and 3rd placed teams respectively in a two-legged playoff. The winners play in the RPL, while the losers join the FNL. Due to the global coronavirus pandemic, the 2019/20 season will not include the playoffs.
+        </p>
+        <div class="section-subtitle margin-bottom">TROPHY</div>
+        <p class="margin-bottom">
+            The 2019/20 champions will lift a brand new trophy that was displayed to fans for the first time in March 2020. The striking design encapsulates themes of teamwork and unity through a strong but light framework, the unpredictable path from childhood to professional football via the weaving ribbons on the base.
+        </p>
+        <p class="margin-bottom">
+            The stars that make up the football at the top a subtle nod to the importance of Soviet history in the Russian game. Overall, the fresh, energetic concept mirrors the modern course of the Russian Premier Liga.
+        </p>
+    </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

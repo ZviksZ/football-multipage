@@ -1,0 +1,333 @@
+<% var data = { title: "Матч | RPL" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section match-header">
+   <div class="match-header__top">
+      <div class="info-item">
+         <span>Tinkoff RPL 2020/2021, 2 MD, №9</span>
+      </div>
+      <div class="info-item">
+         <i class="icon-people"></i>
+         <span>24 444</span>
+      </div>
+      <div class="info-item info-item__gray">
+         <span>25 July 2020 19:00 UTC +3</span>
+      </div>
+      <div class="info-item info-item__gray">
+         <i class="icon-stadium"></i>
+         <span>Otkritie Arena, Moscow</span>
+      </div>
+   </div>
+   <div class="match-header__main">
+      <div class="match-header__score">
+         <div class="bg" style="background-image: url(./img/stadiums/1.jpg)"></div>
+         <div class="bg-overlay"></div>
+
+         <div class="info">
+            <div class="info-club">
+               <img src="./img/clubs/spartak.svg" alt="" class="logo" />
+            </div>
+            <div class="info-data">
+               <div class="score">4:2</div>
+               <div class="status">Finished</div>
+               <div class="sub-score">(Penalty 4:3)</div>
+               <a href="#" class="tag">#SpartakKrasnodar</a>
+            </div>
+            <div class="info-club">
+               <img src="./img/clubs/krasnodar.svg" alt="" class="logo" />
+            </div>
+         </div>
+      </div>
+      <div class="match-header__scorers">
+         <div class="scorers">
+            <div class="item">
+               <span class="player">Kuchaev</span>
+               <span class="minute">52'</span>
+               <span class="additional green">P</span>
+            </div>
+            <div class="item">
+               <span class="player">Shkurin</span>
+               <span class="minute">69'</span>
+            </div>
+            <div class="item">
+               <span class="player">Sobolev</span>
+               <span class="minute">120'+</span>
+            </div>
+         </div>
+         <div class="divider"></div>
+         <div class="scorers scorers-second">
+            <div class="item">
+               <span class="additional red">A</span>
+               <span class="minute">52'</span>
+               <span class="player">Kuchaev</span>
+            </div>
+            <div class="item">
+               <span class="minute">69'</span>
+               <span class="player">Shkurin</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section match-content" data-match-id="13693" id="match-content">
+   <div class="section-tabs">
+      <div class="item " data-match-tab="events">EVENTS</div>
+      <div class="item" data-match-tab="stats">stats</div>
+      <div class="item " data-match-tab="lineups">line-ups</div>
+      <div class="item " data-match-tab="media">media</div>
+   </div>
+
+   <div class="section-content-wrap">
+      <div class="section-tab-page" data-match-tab="events">
+         <!-- Скрыто до договоренности о полном функционале
+         <div class="match-intro-tabs">
+            <div class="container">
+               <div class="tabs tabs-double match-events-tabs">
+                  <div class="item active" data-protocol="1">protocol</div>
+                  <div class="item" data-protocol="0">All events</div>
+               </div>
+            </div>
+         </div> -->
+
+         <div class="match-events-list" id="match-events-list">
+
+
+         </div>
+         <div class="match-events-player" id="match-events-player">
+
+         </div>
+      </div>
+      <div class="section-tab-page" data-match-tab="stats">
+         <div class="match-stats section-block">
+            <div class="section-title text-align-center">
+               <span>Match stats</span>
+            </div>
+            <div id="match-stats">
+
+            </div>
+         </div>
+
+         <!-- Скрыто до договоренности о полном функционале
+         <div class="match-h2h section-block">
+            <div class="section-title text-align-center">
+               <span>Head-to-head</span>
+            </div>
+
+            <div id="match-h2h">
+
+            </div>
+
+
+         </div> -->
+
+         <div class="match-meetings section-block">
+            <div class="section-title text-align-center">
+               <span>Recent Meetings</span>
+            </div>
+            <div id="match-personal-meetings">
+               <!-- <a href="#" class="item">
+                   <div class="date">22 July 2020</div>
+                   <div class="info">
+                      <div class="club">
+                         <span>Spartak</span>
+                         <img src="./img/clubs/spartak.svg" alt="" class="logo" />
+                      </div>
+                      <div class="score">3:2</div>
+                      <div class="club club-second">
+                         <img src="./img/clubs/krasnodar.svg" alt="" class="logo" />
+                         <span>FC Krasnodar</span>
+                      </div>
+                   </div>
+                   <i class="icon-right-arrow"></i>
+                </a>
+                <a href="#" class="item">
+                   <div class="date">22 July 2020</div>
+                   <div class="info">
+                      <div class="club">
+                         <span>Spartak</span>
+                         <img src="./img/clubs/spartak.svg" alt="" class="logo" />
+                      </div>
+                      <div class="score">3:2</div>
+                      <div class="club club-second">
+                         <img src="./img/clubs/krasnodar.svg" alt="" class="logo" />
+                         <span>FC Krasnodar</span>
+                      </div>
+                   </div>
+                   <i class="icon-right-arrow"></i>
+                </a>
+                <a href="#" class="item">
+                   <div class="date">22 July 2020</div>
+                   <div class="info">
+                      <div class="club">
+                         <span>Spartak</span>
+                         <img src="./img/clubs/spartak.svg" alt="" class="logo" />
+                      </div>
+                      <div class="score">3:2</div>
+                      <div class="club club-second">
+                         <img src="./img/clubs/krasnodar.svg" alt="" class="logo" />
+                         <span>FC Krasnodar</span>
+                      </div>
+                   </div>
+                   <i class="icon-right-arrow"></i>
+                </a>
+                <a href="#" class="item">
+                   <div class="date">22 July 2020</div>
+                   <div class="info">
+                      <div class="club">
+                         <span>Spartak</span>
+                         <img src="./img/clubs/spartak.svg" alt="" class="logo" />
+                      </div>
+                      <div class="score">3:2</div>
+                      <div class="club club-second">
+                         <img src="./img/clubs/krasnodar.svg" alt="" class="logo" />
+                         <span>FC Krasnodar</span>
+                      </div>
+                   </div>
+                   <i class="icon-right-arrow"></i>
+                </a>
+                <a href="#" class="item">
+                   <div class="date">22 July 2020</div>
+                   <div class="info">
+                      <div class="club">
+                         <span>Spartak</span>
+                         <img src="./img/clubs/spartak.svg" alt="" class="logo" />
+                      </div>
+                      <div class="score">3:2</div>
+                      <div class="club club-second">
+                         <img src="./img/clubs/krasnodar.svg" alt="" class="logo" />
+                         <span>FC Krasnodar</span>
+                      </div>
+                   </div>
+                   <i class="icon-right-arrow"></i>
+                </a>-->
+            </div>
+
+         </div>
+
+         <div class="match-stats section-block">
+            <div class="section-title text-align-center">
+               <span>Season so far</span>
+            </div>
+
+            <div id="match-season-stats">
+
+            </div>
+
+
+         </div>
+      </div>
+      <div class="section-tab-page" data-match-tab="lineups">
+         <!-- Скрыто до договоренности о полном функционале
+        <div class="match-field section-block">
+           <div class="tactic home">
+              <div class="tactic-club" id="logo-home">
+
+              </div>
+              <div class="tactic-name" id="tactic-home"></div>
+              <div class="field-home" id="field-home">
+
+              </div>
+
+           </div>
+           <div class="field-center"></div>
+           <div class="tactic away">
+              <div class="field-away" id="field-away">
+
+              </div>
+
+              <div class="tactic-club" id="logo-away">
+
+              </div>
+              <div class="tactic-name" id="tactic-away"></div>
+           </div>
+        </div> -->
+        <div class="match-line-up section-block">
+           <div class="section-title text-align-center">
+              <span>First team</span>
+           </div>
+           <div id="main-squad-home" class="match-line-up__list">
+
+           </div>
+           <div id="main-squad-away" class="match-line-up__list">
+
+           </div>
+        </div>
+        <div class="match-line-up section-block">
+           <div class="section-title text-align-center">
+              <span>Substitutes</span>
+           </div>
+           <div id="sub-home" class="match-line-up__list">
+
+           </div>
+           <div id="sub-away" class="match-line-up__list">
+
+           </div>
+        </div>
+        <div class="match-line-up section-block match-coaches">
+           <div class="section-title text-align-center">
+              <span>COACHES</span>
+           </div>
+           <div id="coaches-home" class="match-line-up__list">
+
+           </div>
+           <div id="coaches-away" class="match-line-up__list">
+
+           </div>
+        </div>
+        <div class="match-line-up section-block match-coaches">
+           <div class="section-title text-align-center">
+              <span>STAFF</span>
+           </div>
+           <div id="staff-home" class="match-line-up__list">
+
+           </div>
+           <div id="staff-away" class="match-line-up__list">
+
+           </div>
+        </div>
+
+        <div class="match-officials section-block">
+           <div class="section-title text-align-center">
+              <span>OFFICIALS</span>
+           </div>
+           <div id="match-officials">
+
+           </div>
+        </div>
+     </div>
+     <div class="section-tab-page" data-match-tab="media">
+        <div class="media section-block">
+           <div class="section-title text-align-center">
+              <span>Videos</span>
+           </div>
+           <div class="container">
+              <div class="media-list" id="match-video">
+
+              </div>
+           </div>
+        </div>
+        <div class="photos section-block">
+           <div class="section-title text-align-center">
+              <span>photos</span>
+           </div>
+           <div class="photos_list" id="photos">
+
+           </div>
+        </div>
+
+        <div class="news section-block">
+           <div class="section-title text-align-center">
+              <span>news</span>
+           </div>
+           <div id="match-news">
+
+           </div>
+
+        </div>
+     </div>
+  </div>
+
+
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

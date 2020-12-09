@@ -1,0 +1,154 @@
+.header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $colorGrayLight;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: .3s;
+    z-index: 8888;
+    padding-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    .menu-part {
+        width: 50%;
+        background: $colorSectionBg;
+        overflow: auto;
+        max-height: 100%;
+        &::-webkit-scrollbar { width: 0; }
+        & { -ms-overflow-style: none; }
+        & { overflow: -moz-scrollbars-none; }
+        a {
+            text-decoration: none;
+        }
+        .item-menu {
+            height: 47px;
+            padding: 5px 10px;
+            span {
+                color: $colorText;
+                font-size: 13px;
+            }
+            i {
+                font-size: 14px;
+                color: $colorText;
+            }
+        }
+        .item-menu + .item-menu {
+            border-top: 1px solid $colorGrayLight;
+        }
+        &.main-part {
+            height: 100%;
+            background: $colorSectionBg;
+            .item-with-submenu {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px 10px 5px 34px;
+                position: relative;
+                font-size: 13px;
+                color: $colorText;
+                .item-icon {
+                    position: absolute;
+                    left: 10px;
+                    top: 17px;
+                    color: $colorGray;
+                }
+                .item-arrow {
+                    display: inline-block;
+                    margin-left: 5px;
+                    color: $colorGray;
+                    font-size: 8px;
+                }
+                &.active {
+                    color: $colorBlue;
+                    background: $colorWhite;
+                    i {
+                        color: $colorBlue;
+                    }
+                    .item-arrow {
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px 10px;
+                span {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: rgba(32, 32, 32, 0.8);
+                }
+                i {
+                    font-size: 10px;
+                    color: $colorBlue;
+                }
+            }
+            .lang-switch {
+                display: flex;
+                align-items: center;
+                padding: 17px 18px;
+                a {
+                    width: 75px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $colorText;
+                    color: $colorText;
+                    font-size: 12px;
+                    text-decoration: none;
+                    background: $colorWhite;
+                    &.active {
+                        background: $colorText;
+                        color: $colorWhite;
+                    }
+                }
+            }
+        }
+
+        &.sub-part {
+            background: $colorWhite;
+            .submenu {
+                .item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 5px 10px;
+                    color: $colorText;
+                }
+                .item-with-icon {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 10px;
+                    .icon {
+                        display: block;
+                        margin-right: 7px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                .item-with-logo {
+                    display: flex;
+                    align-items: center;
+                    .icon {
+                        display: block;
+                        margin-right: 10px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    i {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+
+}

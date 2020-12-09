@@ -1,0 +1,61 @@
+<% var data = { title: "Players | RPL" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section clubs-page" id="scroll-load-section" data-ajax="players">
+    <div class="section-title with-select">
+        <span>Players</span>
+        <div class="filter-btn" id="scroll-filter-btn">
+            Filter
+        </div>
+    </div>
+
+    <div id="scroll-filter" class="page-filter">
+        <div class="section-title with-select">
+            <span>Filter</span>
+            <div class="close-btn">
+                <span></span>
+            </div>
+        </div>
+        <div class="container">
+            <select class="custom-select" name="" id="players-league-select">
+                <option value="1" selected>RPL</option>
+                <option value="2">RPL2</option>
+                <option value="3">RPL3</option>
+                <option value="4">RPL4</option>
+            </select>
+            <select class="custom-select" name="" id="players-season-select">
+                <option value="1" selected>Season 2020/21</option>
+                <option value="2">Season 2019/20</option>
+                <option value="3">Season 2018/19</option>
+                <option value="4">Season 2017/18</option>
+            </select>
+            <select class="custom-select" name="" id="players-position-select">
+                <option value="1" selected>Forward</option>
+                <option value="2">Middlefielder</option>
+                <option value="3">Defender</option>
+                <option value="4">Goalkeeper</option>
+            </select>
+            <select class="custom-select" name="" id="players-participations-select">
+                <option value="1" selected>All participations</option>
+                <option value="2">All participations2</option>
+                <option value="3">All participations3</option>
+                <option value="4">All participations4</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="section-search">
+        <label for="scroll-search">
+            <input type="text" id="scroll-search" name="scroll-search" placeholder="Search">
+        </label>
+    </div>
+
+    <div class="section-content-wrap">
+        <div class="section-block">
+
+        </div>
+    </div>
+
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

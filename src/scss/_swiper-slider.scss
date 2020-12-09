@@ -1,0 +1,48 @@
+/*
+.swiper-arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 77;
+    .swiper-button + .swiper-button {
+        margin-left: 1px;
+    }
+}
+.swiper-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $colorBlue;
+    opacity: 1;
+    cursor: pointer;
+    width: 60px;
+    height: 45px;
+    transition: .1s linear;
+    &.swiper-button-prev {
+        img {
+            transform: rotate(90deg) translateZ(0)
+        }
+    }
+    &.swiper-button-next {
+        img {
+            transform: rotate(-90deg) translateZ(0)
+        }
+    }
+    @include desktop {
+        &:hover {
+            background-color: darken($colorBlue, 10%);
+        }
+    }
+    &.swiper-button-disabled {
+        opacity: .8;
+    }
+
+    @include only-mobile {
+        width: 30px;
+        height: 30px;
+    }
+}
+*/
+
+
+

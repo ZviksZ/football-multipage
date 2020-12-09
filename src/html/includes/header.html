@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon.svg" />
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.svg" />
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon.svg" />
+      <link rel="manifest" href="favicon/site.webmanifest" />
+      <link rel="mask-icon" href="favicon/favicon.svg" />
+      <meta name="msapplication-TileColor" content="#ef1b34" />
+      <meta name="theme-color" content="#ffffff" />
+      <link color="#544b3d" href="favicon/favicon/safari-pinned-tab.svg" rel="mask-icon" />
+
+      <link href="css/style.bundle.css?v=1" rel="stylesheet" />
+
+      <title><%=title%></title>
+   </head>
+   <body>
+      <div class="preloader"></div>
+      <div id="header" class="header">
+         <a href="/" class="header__logo">
+            <img src="./img/logo.svg" alt="RPL-logo" />
+         </a>
+
+         <a href="#" class="header__search-btn" id="header__search-btn">
+            <i class="icon-search"></i>
+         </a>
+
+         <div class="header-divider"></div>
+
+         <div class="header__burger">
+            <span></span>
+         </div>
+
+
+          <div class="header__search-controls">
+              <label for="header__search-input">
+                  <input type="text" placeholder="Search" class="header__search-input" id="header__search-input" name="search__input">
+              </label>
+
+              <div class="header__search-close" id="header__search-close">
+                  <span></span>
+              </div>
+          </div>
+      </div>
+      <div class="header__menu">
+         <div class="menu-part main-part" id="menu-main">
+            <a href="" class="item-with-submenu item-menu active" data-submenu="1">
+               <i class="icon-club item-icon"></i>
+               <span>News</span>
+               <i class="icon-dropdown item-arrow"></i>
+            </a>
+            <a href="" class="item-with-submenu item-menu" data-submenu="2">
+               <i class="icon-club item-icon"></i>
+               <span>Media</span>
+               <i class="icon-dropdown item-arrow"></i>
+            </a>
+
+             <a href="" class="item-with-submenu item-menu" data-submenu="3">
+                 <i class="icon-club item-icon"></i>
+                 <span>Clubs</span>
+                 <i class="icon-dropdown item-arrow"></i>
+             </a>
+
+            <a href="" class="item item-menu">
+               <span>League Fair Play</span>
+               <i class="icon-external"></i>
+            </a>
+
+            <div class="lang-switch">
+               <a href="/ru">Ru</a>
+               <a href="/" class="active">Eng</a>
+            </div>
+         </div>
+         <div class="menu-part sub-part" id="menu-sub">
+            <div class="submenu" data-submenu="1">
+               <a href="" class="item item-menu">
+                  <span class="bold-text">All players</span>
+                  <i class="icon-right-arrow"></i>
+               </a>
+               <a href="" class="item item-menu">
+                  <span>Statistics</span>
+                  <i class="icon-right-arrow"></i>
+               </a>
+
+               <a href="" class="item-with-icon item-menu">
+                  <img src="./img/cups/rpl.svg" alt="" class="icon">
+                  <span class="bold-text">Russian Premier Liga</span>
+               </a>
+            </div>
+
+             <div class="submenu hide" data-submenu="2">
+                 <a href="" class="item item-menu">
+                     <span class="bold-text">All players 2</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item item-menu">
+                     <span>Statistics 2</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item item-menu">
+                     <span class="bold-text">All players 2</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item item-menu">
+                     <span>Statistics 2</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+
+                 <a href="" class="item-with-icon item-menu">
+                     <img src="./img/cups/rpl.svg" alt="" class="icon">
+                     <span class="bold-text">Russian Premier Liga</span>
+                 </a>
+             </div>
+
+             <div class="submenu hide" data-submenu="3">
+                 <a href="" class="item item-menu">
+                     <span class="bold-text">All clubs</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/zenit.svg" alt="" class="icon">
+                     <span>Zenit</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/krasnodar.svg" alt="" class="icon">
+                     <span>FC Krasnodar</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/arsenal.svg" alt="" class="icon">
+                     <span>Arsenal Tula</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/zenit.svg" alt="" class="icon">
+                     <span>Zenit</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/krasnodar.svg" alt="" class="icon">
+                     <span>FC Krasnodar</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/arsenal.svg" alt="" class="icon">
+                     <span class="bold-text">Arsenal Tula</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/zenit.svg" alt="" class="icon">
+                     <span>Zenit</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/krasnodar.svg" alt="" class="icon">
+                     <span>FC Krasnodar</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/arsenal.svg" alt="" class="icon">
+                     <span>Arsenal Tula</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/zenit.svg" alt="" class="icon">
+                     <span>Zenit</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/krasnodar.svg" alt="" class="icon">
+                     <span>FC Krasnodar</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/arsenal.svg" alt="" class="icon">
+                     <span>Arsenal Tula</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/zenit.svg" alt="" class="icon">
+                     <span>Zenit</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/krasnodar.svg" alt="" class="icon">
+                     <span>FC Krasnodar</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/arsenal.svg" alt="" class="icon">
+                     <span>Arsenal Tula</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+                 <a href="" class="item-with-logo item-menu">
+                     <img src="./img/clubs/krasnodar.svg" alt="" class="icon">
+                     <span>FC Krasnodar</span>
+                     <i class="icon-right-arrow"></i>
+                 </a>
+
+             </div>
+         </div>
+      </div>
+
+      <div class="header__search" id="header__search">
+          <div class="header__margin"></div>
+
+          <div id="header__search-results">
+              <!--<a href="#" class="club-list-item">
+                  <img src="./img/clubs/spartak.svg" alt="" class="logo">
+                  <div class="club-info">
+                      <div class="name">Spartak </div>
+                      <div class="city">Moscow </div>
+                  </div>
+                  <i class="icon-right-arrow"></i>
+              </a>
+
+              <a href="#" class="player-list-item">
+                  <div class="photo" style="background-image: url('./img/players/chalov.jpg')"></div>
+                  <span class="number">1</span>
+
+                  <div class="player-info">
+                      <div class="name">Aleksandr Spartakovskiy </div>
+                      <div class="country">
+                          <img src="./img/russia.svg" alt="" class="country-flag">
+                          <span>Russia</span>
+                      </div>
+                  </div>
+                  <i class="icon-right-arrow"></i>
+              </a>-->
+          </div>
+      </div>
+
+      <div class="body">
+         <div class="header__margin"></div>

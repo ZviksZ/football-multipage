@@ -1,0 +1,31 @@
+<% var data = { title: "Fixtures | RPL" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section" id="scroll-load-section" data-ajax="matches">
+    <div class="section-title">
+        <span>RPL Fixtures</span>
+    </div>
+
+    <div class="section-title with-double-select">
+        <select class="custom-select" name="" id="fixtures-clubs-select" multiple>
+            <option value="1" selected>All clubs</option>
+            <option value="2">Spartak</option>
+            <option value="3">Krasnodar</option>
+            <option value="4">Zenit</option>
+        </select>
+        <select class="custom-select" name="" id="fixtures-season-select">
+            <option value="1" selected>Season 2020/21</option>
+            <option value="2">Season 2019/20</option>
+            <option value="3">Season 2018/19</option>
+            <option value="4">Season 2017/18</option>
+        </select>
+    </div>
+
+    <div class="section-content-wrap">
+        <div class="section-block no-margin-top">
+
+        </div>
+    </div>
+
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

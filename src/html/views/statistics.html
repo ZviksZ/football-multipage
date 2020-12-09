@@ -1,0 +1,546 @@
+<% var data = { title: "RPL Statistics | RPL" }; %> <%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="section statistics-page" id="statistics-page">
+    <div class="section-title with-select">
+        <span>RPL Statistics</span>
+        <div class="filter-btn" id="scroll-filter-btn">
+            Filter
+        </div>
+    </div>
+    <div class="section-tabs tabs-double">
+        <div class="item active" data-stats-tab="players">Players</div>
+        <div class="item" data-stats-tab="clubs">CLUBS</div>
+    </div>
+
+    <div id="scroll-filter" class="page-filter">
+        <div class="section-title with-select">
+            <span>Filter</span>
+            <div class="close-btn">
+                <span></span>
+            </div>
+        </div>
+        <div class="container">
+            <select class="custom-select" name="" id="statistics-season-select">
+                <option value="1" selected>Season 2020/21</option>
+                <option value="2">Season 2019/20</option>
+                <option value="3">Season 2018/19</option>
+                <option value="4">Season 2017/18</option>
+            </select>
+            <select class="custom-select" name="" multiple id="statistics-clubs-select">
+                <option value="all" selected>All clubs</option>
+                <option value="2">Spartak</option>
+                <option value="3">Lokomotiv</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="section-tab-page active" data-stats-tab="players">
+        <div class="section-content-wrap">
+            <div class="section-block hide" id="statistics-players-goals">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Goals
+                        </div>
+                        <div class="statistics-list">
+                            <!--<a href="" class="statistics-item__big club-bg-color-12">
+                                <div class="bg"></div>
+                                <div class="img" style="background-image: url(/img/players/chalov.jpg)"></div>
+                                <div class="info">
+                                    <div class="name"><span class="rank">1.</span> Denis Makarov</div>
+                                    <div class="club">Rubin</div>
+                                    <div class="count">14</div>
+
+                                    <div class="club-logo">
+                                        <img src="/img/clubs/rubin.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="statistics-item">
+                                <div class="info">
+                                    <img src="/img/clubs/zenit.svg" alt="" class="logo">
+                                    <div class="player">
+                                        <div class="name"><span class="rank">2.</span> Christian Noboa Tello</div>
+                                        <div class="club">Rubin</div>
+                                    </div>
+                                </div>
+                                <span class="count">12</span>
+                            </a>
+                            <a href="" class="statistics-item">
+                                <div class="info">
+                                    <img src="/img/clubs/zenit.svg" alt="" class="logo">
+                                    <div class="player">
+                                        <div class="name"><span class="rank">3.</span> Christian Noboa Tello</div>
+                                        <div class="club">Rubin</div>
+                                    </div>
+                                </div>
+                                <span class="count">10</span>
+                            </a>
+                            <a href="" class="statistics-item__big-club club-bg-color-12">
+                                <div class="bg"></div>
+                                <div class="info">
+                                    <img src="/img/clubs/zenit.svg" alt="" class="logo">
+                                    <div class="club">
+                                        <div class="name"><span class="rank">1.</span> Zenit</div>
+                                    </div>
+                                </div>
+                                <div class="count">14</div>
+                            </a>
+                            <a href="" class="statistics-item">
+                                <div class="info">
+                                    <img src="/img/clubs/sochi.svg" alt="" class="logo">
+                                    <div class="player">
+                                        <div class="name"><span class="rank">2.</span> Sochi</div>
+                                    </div>
+                                </div>
+                                <span class="count">12</span>
+                            </a>
+                            <a href="" class="statistics-item">
+                                <div class="info">
+                                    <img src="/img/clubs/dinamo.svg" alt="" class="logo">
+                                    <div class="player">
+                                        <div class="name"><span class="rank">3.</span> Dynamo</div>
+                                    </div>
+                                </div>
+                                <span class="count">10</span>
+                            </a>-->
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-assists">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Assists
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-goalpass">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Goal + pass
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-blows">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Blows
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-selections">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Selections
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-offside">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Offsides
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-fouls">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Fouls
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-zeroGames">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Zero games
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-saves">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Saves
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-yellowred">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Cards
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-players-penaltiesRealized">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Realized penalties
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-tab-page" data-stats-tab="clubs">
+        <div class="section-content-wrap">
+            <div class="section-block hide" id="statistics-clubs-goals">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Goals
+                        </div>
+                        <div class="statistics-list">
+                            <!--<a href="" class="statistics-item__big club-bg-color-12">
+                                <div class="bg"></div>
+                                <div class="img" style="background-image: url(/img/players/chalov.jpg)"></div>
+                                <div class="info">
+                                    <div class="name"><span class="rank">1.</span> Denis Makarov</div>
+                                    <div class="club">Rubin</div>
+                                    <div class="count">14</div>
+
+                                    <div class="club-logo">
+                                        <img src="/img/clubs/rubin.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="statistics-item">
+                                <div class="info">
+                                    <img src="/img/clubs/zenit.svg" alt="" class="logo">
+                                    <div class="player">
+                                        <div class="name"><span class="rank">2.</span> Christian Noboa Tello</div>
+                                        <div class="club">Rubin</div>
+                                    </div>
+                                </div>
+                                <span class="count">12</span>
+                            </a>
+                            <a href="" class="statistics-item">
+                                <div class="info">
+                                    <img src="/img/clubs/zenit.svg" alt="" class="logo">
+                                    <div class="player">
+                                        <div class="name"><span class="rank">3.</span> Christian Noboa Tello</div>
+                                        <div class="club">Rubin</div>
+                                    </div>
+                                </div>
+                                <span class="count">10</span>
+                            </a>
+                            <a href="" class="statistics-item__big-club club-bg-color-12">
+                                <div class="bg"></div>
+                                <div class="info">
+                                    <img src="/img/clubs/zenit.svg" alt="" class="logo">
+                                    <div class="club">
+                                        <div class="name"><span class="rank">1.</span> Zenit</div>
+                                    </div>
+                                </div>
+                                <div class="count">14</div>
+                            </a>
+                            <a href="" class="statistics-item">
+                                <div class="info">
+                                    <img src="/img/clubs/sochi.svg" alt="" class="logo">
+                                    <div class="player">
+                                        <div class="name"><span class="rank">2.</span> Sochi</div>
+                                    </div>
+                                </div>
+                                <span class="count">12</span>
+                            </a>
+                            <a href="" class="statistics-item">
+                                <div class="info">
+                                    <img src="/img/clubs/dinamo.svg" alt="" class="logo">
+                                    <div class="player">
+                                        <div class="name"><span class="rank">3.</span> Dynamo</div>
+                                    </div>
+                                </div>
+                                <span class="count">10</span>
+                            </a>-->
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-assists">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Assists
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-goalpass">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Goal + pass
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-blows">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Blows
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-selections">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Selections
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-offside">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Offsides
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-fouls">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Fouls
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-zeroGames">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Zero games
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-saves">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Saves
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-yellowred">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Cards
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block hide" id="statistics-clubs-penaltiesRealized">
+                <div class="statistics-block">
+                    <div class="container">
+                        <div class="title">
+                            Realized penalties
+                        </div>
+                        <div class="statistics-list">
+                        </div>
+                        <div class="detail-link">
+                            <a href="#">
+                                <span>Full table</span>
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

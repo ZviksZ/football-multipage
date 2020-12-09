@@ -1,0 +1,15 @@
+<% var data = {
+title: "Ошибка 404 | RPL"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="page-header"></div>
+<div class="section section-404">
+        <div class="page-no-found">
+            <h1 class="no-found-title">Ошибка 404</h1>
+            <p class="no-found-subtitle">Такой страницы не существует</p>
+            <a href="/" class="button inline">Перейти на главную</a>
+        </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
